@@ -1,0 +1,6 @@
+framework module Pods_PaRMonWC {
+  umbrella header "Pods-PaRMonWC-umbrella.h"
+
+  export *
+  module * { export * }
+}

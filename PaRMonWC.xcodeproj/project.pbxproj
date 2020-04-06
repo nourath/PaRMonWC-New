@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */; };
+		3D59CCCC2419828300426D90 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCCB2419828300426D90 /* Utilities.swift */; };
+		3D59CCCE241982B100426D90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCCD241982B100426D90 /* Constants.swift */; };
+		3D59CCD2241984DA00426D90 /* PatientIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCD1241984DA00426D90 /* PatientIntroViewController.swift */; };
+		3D59CCD4241985DE00426D90 /* PhysicianIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */; };
+		3D59CCD62419860300426D90 /* PatientSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCD52419860300426D90 /* PatientSignUpViewController.swift */; };
+		3D59CCD82419862100426D90 /* PatientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCD72419862100426D90 /* PatientLoginViewController.swift */; };
+		3D59CCDC2419867F00426D90 /* PhysicianSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */; };
+		3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */; };
+		3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */; };
+		3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCE12419870200426D90 /* PatientHomeViewController.swift */; };
+		3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */; };
+		3D757A13243BC0E4006947BB /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757A12243BC0E4006947BB /* ReminderManager.swift */; };
+		3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757A14243BC146006947BB /* Reminder1ViewController.swift */; };
+		3D757A17243BC180006947BB /* Reminder2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757A16243BC180006947BB /* Reminder2ViewController.swift */; };
+		3DC6625C23FC1212009486E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6625B23FC1212009486E8 /* AppDelegate.swift */; };
+		3DC6625E23FC1212009486E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6625D23FC1212009486E8 /* SceneDelegate.swift */; };
+		3DC6626023FC1212009486E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6625F23FC1212009486E8 /* ViewController.swift */; };
+		3DC6626323FC1212009486E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6626123FC1212009486E8 /* Main.storyboard */; };
+		3DC6626523FC1216009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6626423FC1216009486E8 /* Assets.xcassets */; };
+		3DC6626823FC1216009486E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6626623FC1216009486E8 /* LaunchScreen.storyboard */; };
+		3DC6626D23FC1217009486E8 /* PaRMonWC WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3DC6626C23FC1217009486E8 /* PaRMonWC WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DC6627323FC1217009486E8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6627123FC1217009486E8 /* Interface.storyboard */; };
+		3DC6627523FC1218009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6627423FC1218009486E8 /* Assets.xcassets */; };
+		3DC6627C23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DC6627B23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DC6628123FC1218009486E8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628023FC1218009486E8 /* InterfaceController.swift */; };
+		3DC6628323FC1218009486E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */; };
+		3DC6628523FC1218009486E8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628423FC1218009486E8 /* NotificationController.swift */; };
+		3DC6628723FC1219009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6628623FC1219009486E8 /* Assets.xcassets */; };
+		3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */; };
+		3DFB0EB2241B0B2D00698915 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0EB0241B0B2D00698915 /* User.swift */; };
+		526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */; };
+		526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F122436BF3C00C15B1C /* PatientProfileController.swift */; };
+		52877B2C24353ADC00CD2560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52877B2B24353ADC00CD2560 /* GoogleService-Info.plist */; };
+		52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */; };
+		52877B30243557AC00CD2560 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B2F243557AC00CD2560 /* Patient.swift */; };
+		52877B322435581F00CD2560 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B312435581F00CD2560 /* Medication.swift */; };
+		69F33E007475A050E853547E /* Pods_PaRMonWC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */; };
+		BBA08D8678734276384C5BEB /* Pods_PaRMonWC_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C324BC00740FB96FD47229E /* Pods_PaRMonWC_WatchKit_Extension.framework */; };
+		C469F560DB61E618DC62C1D3 /* Pods_PaRMonWC_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC6626E23FC1217009486E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC6625023FC1212009486E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC6626B23FC1217009486E8;
+			remoteInfo = "PaRMonWC WatchKit App";
+		};
+		3DC6627D23FC1218009486E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC6625023FC1212009486E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC6627A23FC1218009486E8;
+			remoteInfo = "PaRMonWC WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DC6628F23FC1219009486E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3DC6627C23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC6629323FC1219009486E8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3DC6626D23FC1217009486E8 /* PaRMonWC WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01F690BA80C54A4F5681DB07 /* Pods-PaRMonWC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC.release.xcconfig"; sourceTree = "<group>"; };
+		3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTabBarController.swift; sourceTree = "<group>"; };
+		3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMedicationTableTableViewController.swift; sourceTree = "<group>"; };
+		3D59CCCB2419828300426D90 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3D59CCCD241982B100426D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3D59CCD1241984DA00426D90 /* PatientIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIntroViewController.swift; sourceTree = "<group>"; };
+		3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianIntroViewController.swift; sourceTree = "<group>"; };
+		3D59CCD52419860300426D90 /* PatientSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSignUpViewController.swift; sourceTree = "<group>"; };
+		3D59CCD72419862100426D90 /* PatientLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLoginViewController.swift; sourceTree = "<group>"; };
+		3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianSignUpViewController.swift; sourceTree = "<group>"; };
+		3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianHomeViewController.swift; sourceTree = "<group>"; };
+		3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianLoginViewController.swift; sourceTree = "<group>"; };
+		3D59CCE12419870200426D90 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
+		3D757A12243BC0E4006947BB /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		3D757A14243BC146006947BB /* Reminder1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder1ViewController.swift; sourceTree = "<group>"; };
+		3D757A16243BC180006947BB /* Reminder2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder2ViewController.swift; sourceTree = "<group>"; };
+		3DC6625823FC1212009486E8 /* PaRMonWC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaRMonWC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC6625B23FC1212009486E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DC6625D23FC1212009486E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DC6625F23FC1212009486E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DC6626223FC1212009486E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC6626423FC1216009486E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC6626723FC1216009486E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DC6626923FC1216009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC6626C23FC1217009486E8 /* PaRMonWC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaRMonWC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC6627223FC1217009486E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3DC6627423FC1218009486E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC6627623FC1218009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC6627B23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PaRMonWC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC6628023FC1218009486E8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3DC6628423FC1218009486E8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3DC6628623FC1219009486E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC6628823FC1219009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationTableViewController.swift; sourceTree = "<group>"; };
+		3DFB0EB0241B0B2D00698915 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianPatientsTabBarContoller.swift; sourceTree = "<group>"; };
+		526D0F122436BF3C00C15B1C /* PatientProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileController.swift; sourceTree = "<group>"; };
+		52877B2B24353ADC00CD2560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianProfileViewController.swift; sourceTree = "<group>"; };
+		52877B2F243557AC00CD2560 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		52877B312435581F00CD2560 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5798C172D932DE24F2E0FCD6 /* Pods-PaRMonWC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC.debug.xcconfig"; sourceTree = "<group>"; };
+		6C11B73F9F828B2AE3706DEA /* Pods-PaRMonWC WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit App/Pods-PaRMonWC WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		6C324BC00740FB96FD47229E /* Pods_PaRMonWC_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D1C5C2AB875A703B19EA36 /* Pods-PaRMonWC WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit Extension/Pods-PaRMonWC WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A58EB8D5B19ECB8A61D14B31 /* Pods-PaRMonWC WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit App/Pods-PaRMonWC WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		F3165282E15776F3DC39D934 /* Pods-PaRMonWC WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit Extension/Pods-PaRMonWC WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12B057ED4D00279DEDC85602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C469F560DB61E618DC62C1D3 /* Pods_PaRMonWC_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC6625523FC1212009486E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F33E007475A050E853547E /* Pods_PaRMonWC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC6627823FC1218009486E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA08D8678734276384C5BEB /* Pods_PaRMonWC_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D59CCE32419876A00426D90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DC6625F23FC1212009486E8 /* ViewController.swift */,
+				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
+				3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */,
+				3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */,
+				3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */,
+				3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */,
+				3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */,
+				3D59CCD1241984DA00426D90 /* PatientIntroViewController.swift */,
+				3D59CCD52419860300426D90 /* PatientSignUpViewController.swift */,
+				3D59CCD72419862100426D90 /* PatientLoginViewController.swift */,
+				3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */,
+				3D59CCE12419870200426D90 /* PatientHomeViewController.swift */,
+				52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */,
+				526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */,
+				526D0F122436BF3C00C15B1C /* PatientProfileController.swift */,
+				3D757A14243BC146006947BB /* Reminder1ViewController.swift */,
+				3D757A16243BC180006947BB /* Reminder2ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D59CCE524198A1A00426D90 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D59CCCB2419828300426D90 /* Utilities.swift */,
+				3D59CCCD241982B100426D90 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DC6624F23FC1212009486E8 = {
+			isa = PBXGroup;
+			children = (
+				3DC6625A23FC1212009486E8 /* PaRMonWC */,
+				3DC6627023FC1217009486E8 /* PaRMonWC WatchKit App */,
+				3DC6627F23FC1218009486E8 /* PaRMonWC WatchKit Extension */,
+				3DC6625923FC1212009486E8 /* Products */,
+				950A42E434A5226685FEE859 /* Pods */,
+				E30B1CD78BC810914F79D7F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC6625923FC1212009486E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC6625823FC1212009486E8 /* PaRMonWC.app */,
+				3DC6626C23FC1217009486E8 /* PaRMonWC WatchKit App.app */,
+				3DC6627B23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC6625A23FC1212009486E8 /* PaRMonWC */ = {
+			isa = PBXGroup;
+			children = (
+				3DC6625B23FC1212009486E8 /* AppDelegate.swift */,
+				3DC6625D23FC1212009486E8 /* SceneDelegate.swift */,
+				3DFB0EC2241B126900698915 /* Models */,
+				3D59CCE524198A1A00426D90 /* Helpers */,
+				3D59CCE32419876A00426D90 /* ViewControllers */,
+				3DC6626123FC1212009486E8 /* Main.storyboard */,
+				3DC6626423FC1216009486E8 /* Assets.xcassets */,
+				3DC6626623FC1216009486E8 /* LaunchScreen.storyboard */,
+				52877B2B24353ADC00CD2560 /* GoogleService-Info.plist */,
+				3DC6626923FC1216009486E8 /* Info.plist */,
+			);
+			path = PaRMonWC;
+			sourceTree = "<group>";
+		};
+		3DC6627023FC1217009486E8 /* PaRMonWC WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3DC6627123FC1217009486E8 /* Interface.storyboard */,
+				3DC6627423FC1218009486E8 /* Assets.xcassets */,
+				3DC6627623FC1218009486E8 /* Info.plist */,
+			);
+			path = "PaRMonWC WatchKit App";
+			sourceTree = "<group>";
+		};
+		3DC6627F23FC1218009486E8 /* PaRMonWC WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3DC6628023FC1218009486E8 /* InterfaceController.swift */,
+				3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */,
+				3DC6628423FC1218009486E8 /* NotificationController.swift */,
+				3DC6628623FC1219009486E8 /* Assets.xcassets */,
+				3DC6628823FC1219009486E8 /* Info.plist */,
+				3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */,
+			);
+			path = "PaRMonWC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3DFB0EC2241B126900698915 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DFB0EE2241B12F400698915 /* Medication Model */,
+				3D757A12243BC0E4006947BB /* ReminderManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DFB0EE2241B12F400698915 /* Medication Model */ = {
+			isa = PBXGroup;
+			children = (
+				52877B312435581F00CD2560 /* Medication.swift */,
+				52877B2F243557AC00CD2560 /* Patient.swift */,
+				3DFB0EB0241B0B2D00698915 /* User.swift */,
+			);
+			path = "Medication Model";
+			sourceTree = "<group>";
+		};
+		950A42E434A5226685FEE859 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5798C172D932DE24F2E0FCD6 /* Pods-PaRMonWC.debug.xcconfig */,
+				01F690BA80C54A4F5681DB07 /* Pods-PaRMonWC.release.xcconfig */,
+				A58EB8D5B19ECB8A61D14B31 /* Pods-PaRMonWC WatchKit App.debug.xcconfig */,
+				6C11B73F9F828B2AE3706DEA /* Pods-PaRMonWC WatchKit App.release.xcconfig */,
+				F3165282E15776F3DC39D934 /* Pods-PaRMonWC WatchKit Extension.debug.xcconfig */,
+				85D1C5C2AB875A703B19EA36 /* Pods-PaRMonWC WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E30B1CD78BC810914F79D7F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */,
+				52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */,
+				6C324BC00740FB96FD47229E /* Pods_PaRMonWC_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC6625723FC1212009486E8 /* PaRMonWC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC6629423FC1219009486E8 /* Build configuration list for PBXNativeTarget "PaRMonWC" */;
+			buildPhases = (
+				F5A0B115893AD2B61DBA023D /* [CP] Check Pods Manifest.lock */,
+				3DC6625423FC1212009486E8 /* Sources */,
+				3DC6625523FC1212009486E8 /* Frameworks */,
+				3DC6625623FC1212009486E8 /* Resources */,
+				3DC6629323FC1219009486E8 /* Embed Watch Content */,
+				EBD26541FD68231337FCE73F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC6626F23FC1217009486E8 /* PBXTargetDependency */,
+			);
+			name = PaRMonWC;
+			productName = PaRMonWC;
+			productReference = 3DC6625823FC1212009486E8 /* PaRMonWC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC6626B23FC1217009486E8 /* PaRMonWC WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC6629023FC1219009486E8 /* Build configuration list for PBXNativeTarget "PaRMonWC WatchKit App" */;
+			buildPhases = (
+				6C044A57AD398067F2958AED /* [CP] Check Pods Manifest.lock */,
+				3DC6626A23FC1217009486E8 /* Resources */,
+				3DC6628F23FC1219009486E8 /* Embed App Extensions */,
+				12B057ED4D00279DEDC85602 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC6627E23FC1218009486E8 /* PBXTargetDependency */,
+			);
+			name = "PaRMonWC WatchKit App";
+			productName = "PaRMonWC WatchKit App";
+			productReference = 3DC6626C23FC1217009486E8 /* PaRMonWC WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3DC6627A23FC1218009486E8 /* PaRMonWC WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC6628C23FC1219009486E8 /* Build configuration list for PBXNativeTarget "PaRMonWC WatchKit Extension" */;
+			buildPhases = (
+				42DE2BA3DD56AEA2E097F552 /* [CP] Check Pods Manifest.lock */,
+				3DC6627723FC1218009486E8 /* Sources */,
+				3DC6627823FC1218009486E8 /* Frameworks */,
+				3DC6627923FC1218009486E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaRMonWC WatchKit Extension";
+			productName = "PaRMonWC WatchKit Extension";
+			productReference = 3DC6627B23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC6625023FC1212009486E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Noura;
+				TargetAttributes = {
+					3DC6625723FC1212009486E8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3DC6626B23FC1217009486E8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3DC6627A23FC1218009486E8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3DC6625323FC1212009486E8 /* Build configuration list for PBXProject "PaRMonWC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC6624F23FC1212009486E8;
+			productRefGroup = 3DC6625923FC1212009486E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC6625723FC1212009486E8 /* PaRMonWC */,
+				3DC6626B23FC1217009486E8 /* PaRMonWC WatchKit App */,
+				3DC6627A23FC1218009486E8 /* PaRMonWC WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC6625623FC1212009486E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC6626823FC1216009486E8 /* LaunchScreen.storyboard in Resources */,
+				52877B2C24353ADC00CD2560 /* GoogleService-Info.plist in Resources */,
+				3DC6626523FC1216009486E8 /* Assets.xcassets in Resources */,
+				3DC6626323FC1212009486E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC6626A23FC1217009486E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC6627523FC1218009486E8 /* Assets.xcassets in Resources */,
+				3DC6627323FC1217009486E8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC6627923FC1218009486E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC6628723FC1219009486E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42DE2BA3DD56AEA2E097F552 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaRMonWC WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C044A57AD398067F2958AED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaRMonWC WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD26541FD68231337FCE73F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A0B115893AD2B61DBA023D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaRMonWC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC6625423FC1212009486E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
+				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
+				3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */,
+				3D59CCCE241982B100426D90 /* Constants.swift in Sources */,
+				3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */,
+				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
+				3DFB0EB2241B0B2D00698915 /* User.swift in Sources */,
+				3D59CCD82419862100426D90 /* PatientLoginViewController.swift in Sources */,
+				3D59CCD62419860300426D90 /* PatientSignUpViewController.swift in Sources */,
+				3D59CCDC2419867F00426D90 /* PhysicianSignUpViewController.swift in Sources */,
+				3D757A13243BC0E4006947BB /* ReminderManager.swift in Sources */,
+				3D59CCD4241985DE00426D90 /* PhysicianIntroViewController.swift in Sources */,
+				3DC6625C23FC1212009486E8 /* AppDelegate.swift in Sources */,
+				3D59CCCC2419828300426D90 /* Utilities.swift in Sources */,
+				52877B30243557AC00CD2560 /* Patient.swift in Sources */,
+				52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */,
+				3D757A17243BC180006947BB /* Reminder2ViewController.swift in Sources */,
+				3D59CCD2241984DA00426D90 /* PatientIntroViewController.swift in Sources */,
+				3DC6625E23FC1212009486E8 /* SceneDelegate.swift in Sources */,
+				3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */,
+				52877B322435581F00CD2560 /* Medication.swift in Sources */,
+				3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */,
+				3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */,
+				526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */,
+				3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC6627723FC1218009486E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC6628523FC1218009486E8 /* NotificationController.swift in Sources */,
+				3DC6628323FC1218009486E8 /* ExtensionDelegate.swift in Sources */,
+				3DC6628123FC1218009486E8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC6626F23FC1217009486E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC6626B23FC1217009486E8 /* PaRMonWC WatchKit App */;
+			targetProxy = 3DC6626E23FC1217009486E8 /* PBXContainerItemProxy */;
+		};
+		3DC6627E23FC1218009486E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC6627A23FC1218009486E8 /* PaRMonWC WatchKit Extension */;
+			targetProxy = 3DC6627D23FC1218009486E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC6626123FC1212009486E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC6626223FC1212009486E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC6626623FC1216009486E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC6626723FC1216009486E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC6627123FC1217009486E8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC6627223FC1217009486E8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC6628A23FC1219009486E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DC6628B23FC1219009486E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC6628D23FC1219009486E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3165282E15776F3DC39D934 /* Pods-PaRMonWC WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87823T5P42;
+				INFOPLIST_FILE = "PaRMonWC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		3DC6628E23FC1219009486E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D1C5C2AB875A703B19EA36 /* Pods-PaRMonWC WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87823T5P42;
+				INFOPLIST_FILE = "PaRMonWC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		3DC6629123FC1219009486E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58EB8D5B19ECB8A61D14B31 /* Pods-PaRMonWC WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87823T5P42;
+				IBSC_MODULE = PaRMonWC_WatchKit_Extension;
+				INFOPLIST_FILE = "PaRMonWC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		3DC6629223FC1219009486E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C11B73F9F828B2AE3706DEA /* Pods-PaRMonWC WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87823T5P42;
+				IBSC_MODULE = PaRMonWC_WatchKit_Extension;
+				INFOPLIST_FILE = "PaRMonWC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		3DC6629523FC1219009486E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5798C172D932DE24F2E0FCD6 /* Pods-PaRMonWC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87823T5P42;
+				INFOPLIST_FILE = PaRMonWC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DC6629623FC1219009486E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F690BA80C54A4F5681DB07 /* Pods-PaRMonWC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87823T5P42;
+				INFOPLIST_FILE = PaRMonWC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC6625323FC1212009486E8 /* Build configuration list for PBXProject "PaRMonWC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC6628A23FC1219009486E8 /* Debug */,
+				3DC6628B23FC1219009486E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC6628C23FC1219009486E8 /* Build configuration list for PBXNativeTarget "PaRMonWC WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC6628D23FC1219009486E8 /* Debug */,
+				3DC6628E23FC1219009486E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC6629023FC1219009486E8 /* Build configuration list for PBXNativeTarget "PaRMonWC WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC6629123FC1219009486E8 /* Debug */,
+				3DC6629223FC1219009486E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC6629423FC1219009486E8 /* Build configuration list for PBXNativeTarget "PaRMonWC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC6629523FC1219009486E8 /* Debug */,
+				3DC6629623FC1219009486E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC6625023FC1212009486E8 /* Project object */;
+}
