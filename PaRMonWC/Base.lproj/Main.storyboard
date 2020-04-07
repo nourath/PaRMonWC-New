@@ -301,14 +301,14 @@
                                 <rect key="frame" x="-6" y="-92" width="427" height="934"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-MD-9EM">
-                                <rect key="frame" x="34" y="-116" width="346" height="346"/>
+                                <rect key="frame" x="120.5" y="230" width="173" height="173"/>
                                 <state key="normal" image="doctor-1"/>
                                 <connections>
                                     <segue destination="xiU-v3-JUY" kind="show" id="7dE-hz-hWr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-pv-iz1">
-                                <rect key="frame" x="34" y="276" width="346" height="346"/>
+                                <rect key="frame" x="120.5" y="449" width="173" height="173"/>
                                 <state key="normal" image="patient"/>
                                 <connections>
                                     <segue destination="qmr-Ys-0OX" kind="show" id="NpZ-Kc-Zqb"/>
@@ -674,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PE9-mF-Gmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="3226"/>
+            <point key="canvasLocation" x="1526.0869565217392" y="3225.6696428571427"/>
         </scene>
         <!--Motion Collector-->
         <scene sceneID="NCV-7f-xGz">
@@ -685,7 +685,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home page pdp" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-wn-urx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Noura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-Jb-b6j">
                                 <rect key="frame" x="186" y="437" width="47" height="21"/>
@@ -711,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juJ-qy-RMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="3226"/>
+            <point key="canvasLocation" x="2242.0289855072465" y="3225.6696428571427"/>
         </scene>
         <!--Patient Reminder-->
         <scene sceneID="vbS-AV-s4A">
@@ -827,6 +827,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="10j-0p-9ZR" kind="relationship" relationship="viewControllers" id="cma-zd-PBp"/>
+                        <segue destination="Vhj-iT-97Y" kind="relationship" relationship="viewControllers" id="CGY-fr-H7b"/>
                         <segue destination="nke-hw-Jcc" kind="relationship" relationship="viewControllers" id="EpU-J6-G0h"/>
                         <segue destination="kit-5V-vID" kind="relationship" relationship="viewControllers" id="ZMQ-fC-h3M"/>
                         <segue destination="Wee-n6-xTk" kind="relationship" relationship="viewControllers" id="sCn-zS-Ykz"/>
@@ -902,7 +903,7 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor-1" translatesAutoresizingMaskIntoConstraints="NO" id="7iM-UR-4IK">
-                                <rect key="frame" x="119" y="68" width="176" height="346"/>
+                                <rect key="frame" x="119" y="68" width="176" height="173"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1358,6 +1359,71 @@
             </objects>
             <point key="canvasLocation" x="5223" y="100"/>
         </scene>
+        <!--MedicationTableViewController-->
+        <scene sceneID="KGt-Vi-Pkw">
+            <objects>
+                <tableViewController title="MedicationTableViewController" id="UfX-Wp-mKf" customClass="PatientDosesTableViewController" customModule="PaRMonWC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="jyq-J8-HV5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="9cM-Iy-1ar" detailTextLabel="K5D-Yg-Uq6" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="gG9-1l-9KO">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gG9-1l-9KO" id="rGU-V3-UoR">
+                                    <rect key="frame" x="0.0" y="0.0" width="351" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9cM-Iy-1ar">
+                                            <rect key="frame" x="20" y="7" width="35" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K5D-Yg-Uq6">
+                                            <rect key="frame" x="20" y="35" width="41.5" height="16.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UfX-Wp-mKf" id="NQ7-pR-4ku"/>
+                            <outlet property="delegate" destination="UfX-Wp-mKf" id="CMe-zk-2n0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Medications" id="rB6-3M-K76"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnf-8v-BYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="3225.6696428571427"/>
+        </scene>
+        <!--Dosege-->
+        <scene sceneID="Xno-C0-euI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vhj-iT-97Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dosege" image="bandage" catalog="system" id="RTO-J0-reS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5CJ-5J-5J7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UfX-Wp-mKf" kind="relationship" relationship="rootViewController" id="c5H-bg-LuZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DW4-42-BIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="3225.6696428571427"/>
+        </scene>
     </scenes>
     <resources>
         <image name="2208618C-39AB-4584-874C-22B6F0902E25" width="713" height="952"/>
@@ -1365,6 +1431,7 @@
         <image name="Logout" width="512" height="512"/>
         <image name="Rectangle" width="343" height="477"/>
         <image name="background" width="375" height="809"/>
+        <image name="bandage" catalog="system" width="64" height="58"/>
         <image name="bell" catalog="system" width="64" height="62"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="doctor-1" width="173" height="173"/>

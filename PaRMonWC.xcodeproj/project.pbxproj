@@ -44,6 +44,7 @@
 		52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */; };
 		52877B30243557AC00CD2560 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B2F243557AC00CD2560 /* Patient.swift */; };
 		52877B322435581F00CD2560 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B312435581F00CD2560 /* Medication.swift */; };
+		52CF3C12243D3A5E00E30C54 /* PatientDosegeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */; };
 		69F33E007475A050E853547E /* Pods_PaRMonWC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */; };
 		884130B3243D30F700843663 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130B2243D30F700843663 /* HealthKitAssistant.swift */; };
 		884130B5243D310100843663 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130B4243D310000843663 /* HomeController.swift */; };
@@ -140,6 +141,7 @@
 		52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianProfileViewController.swift; sourceTree = "<group>"; };
 		52877B2F243557AC00CD2560 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		52877B312435581F00CD2560 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientDosegeTableViewController.swift; path = "../../../../Downloads/PaRMonWC-New-master/PaRMonWC/ViewControllers/PatientDosegeTableViewController.swift"; sourceTree = "<group>"; };
 		52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5798C172D932DE24F2E0FCD6 /* Pods-PaRMonWC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC.debug.xcconfig"; sourceTree = "<group>"; };
 		6C11B73F9F828B2AE3706DEA /* Pods-PaRMonWC WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit App/Pods-PaRMonWC WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		3D59CCE32419876A00426D90 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */,
 				3DC6625F23FC1212009486E8 /* ViewController.swift */,
 				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
 				3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */,
@@ -552,6 +555,7 @@
 				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
 				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
 				3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */,
+				52CF3C12243D3A5E00E30C54 /* PatientDosegeTableViewController.swift in Sources */,
 				3D59CCCE241982B100426D90 /* Constants.swift in Sources */,
 				3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */,
 				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
