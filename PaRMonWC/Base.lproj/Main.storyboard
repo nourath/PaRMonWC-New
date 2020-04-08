@@ -301,14 +301,14 @@
                                 <rect key="frame" x="-6" y="-92" width="427" height="934"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-MD-9EM">
-                                <rect key="frame" x="120.5" y="230" width="173" height="173"/>
+                                <rect key="frame" x="34" y="-116" width="346" height="346"/>
                                 <state key="normal" image="doctor-1"/>
                                 <connections>
                                     <segue destination="xiU-v3-JUY" kind="show" id="7dE-hz-hWr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-pv-iz1">
-                                <rect key="frame" x="120.5" y="449" width="173" height="173"/>
+                                <rect key="frame" x="34" y="276" width="346" height="346"/>
                                 <state key="normal" image="patient"/>
                                 <connections>
                                     <segue destination="qmr-Ys-0OX" kind="show" id="NpZ-Kc-Zqb"/>
@@ -674,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PE9-mF-Gmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="3226"/>
+            <point key="canvasLocation" x="1526.0869565217392" y="3225.6696428571427"/>
         </scene>
         <!--Motion Collector-->
         <scene sceneID="NCV-7f-xGz">
@@ -685,7 +685,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home page pdp" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-wn-urx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Noura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-Jb-b6j">
                                 <rect key="frame" x="186" y="437" width="47" height="21"/>
@@ -711,45 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juJ-qy-RMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="3226"/>
-        </scene>
-        <!--Patient Report-->
-        <scene sceneID="pIN-c6-8xR">
-            <objects>
-                <viewController title="Patient Report" id="adp-9p-F5o" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jVr-6K-Gwa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home page pdp-2" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-wf-Xcu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-d9-sas">
-                                <rect key="frame" x="186" y="438" width="44" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Rn-wf-Xcu" firstAttribute="top" secondItem="jVr-6K-Gwa" secondAttribute="topMargin" constant="-44" id="3ba-gd-Wae"/>
-                            <constraint firstItem="f88-d9-sas" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="18A-PL-304" secondAttribute="leading" id="7Ne-H9-6Vz"/>
-                            <constraint firstItem="6Rn-wf-Xcu" firstAttribute="leading" secondItem="18A-PL-304" secondAttribute="leading" id="K23-ZC-v28"/>
-                            <constraint firstItem="18A-PL-304" firstAttribute="trailing" secondItem="f88-d9-sas" secondAttribute="trailing" constant="184" id="aQF-PQ-bxb"/>
-                            <constraint firstItem="f88-d9-sas" firstAttribute="top" secondItem="18A-PL-304" secondAttribute="top" constant="394" id="fUi-0m-CBd"/>
-                            <constraint firstItem="f88-d9-sas" firstAttribute="centerY" secondItem="6Rn-wf-Xcu" secondAttribute="centerY" id="h4w-m9-Kf0"/>
-                            <constraint firstItem="f88-d9-sas" firstAttribute="centerY" secondItem="jVr-6K-Gwa" secondAttribute="centerY" id="ldf-uP-Ivo"/>
-                            <constraint firstItem="6Rn-wf-Xcu" firstAttribute="centerX" secondItem="jVr-6K-Gwa" secondAttribute="centerX" id="rll-91-KmS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="18A-PL-304"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Health Report" image="heart" catalog="system" id="sDZ-zD-BUH"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfw-pE-Ng0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2033" y="3226"/>
+            <point key="canvasLocation" x="2242.0289855072465" y="3225.6696428571427"/>
         </scene>
         <!--Patient Reminder-->
         <scene sceneID="vbS-AV-s4A">
@@ -865,10 +827,11 @@
                     </tabBar>
                     <connections>
                         <segue destination="10j-0p-9ZR" kind="relationship" relationship="viewControllers" id="cma-zd-PBp"/>
+                        <segue destination="Vhj-iT-97Y" kind="relationship" relationship="viewControllers" id="CGY-fr-H7b"/>
                         <segue destination="nke-hw-Jcc" kind="relationship" relationship="viewControllers" id="EpU-J6-G0h"/>
                         <segue destination="kit-5V-vID" kind="relationship" relationship="viewControllers" id="ZMQ-fC-h3M"/>
                         <segue destination="Wee-n6-xTk" kind="relationship" relationship="viewControllers" id="sCn-zS-Ykz"/>
-                        <segue destination="adp-9p-F5o" kind="relationship" relationship="viewControllers" id="69d-nk-eFJ"/>
+                        <segue destination="17z-Iy-P3f" kind="relationship" relationship="viewControllers" id="hWF-9o-wjP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTm-XJ-Tbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -940,7 +903,7 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor-1" translatesAutoresizingMaskIntoConstraints="NO" id="7iM-UR-4IK">
-                                <rect key="frame" x="119" y="68" width="176" height="173"/>
+                                <rect key="frame" x="119" y="68" width="176" height="346"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1125,29 +1088,6 @@
             </objects>
             <point key="canvasLocation" x="6379.7101449275369" y="-1357.3660714285713"/>
         </scene>
-        <!--Reports-->
-        <scene sceneID="Ard-7X-Bw6">
-            <objects>
-                <viewController title="Reports" id="Wcj-7A-9aD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ekA-Ok-ILr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home page pdp" translatesAutoresizingMaskIntoConstraints="NO" id="JBU-aT-lqR">
-                                <rect key="frame" x="-26" y="-61" width="460" height="903"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="AfU-gF-ckf"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Patient Reports" image="archivebox" catalog="system" id="Nke-mS-IeF"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fpU-67-Lme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6379.7101449275369" y="-626.11607142857144"/>
-        </scene>
         <!--PhysicianTabBarViewController-->
         <scene sceneID="kas-60-k7W">
             <objects>
@@ -1292,7 +1232,7 @@
                     <connections>
                         <segue destination="3jM-Le-3AL" kind="relationship" relationship="viewControllers" id="AG3-pO-mzB"/>
                         <segue destination="r5Q-Ao-g8y" kind="relationship" relationship="viewControllers" id="nvc-Ga-pm8"/>
-                        <segue destination="Wcj-7A-9aD" kind="relationship" relationship="viewControllers" id="34Z-IU-evx"/>
+                        <segue destination="17z-Iy-P3f" kind="relationship" relationship="viewControllers" id="fgp-VK-aNY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xfb-C2-d8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1337,28 +1277,178 @@
             </objects>
             <point key="canvasLocation" x="3428.985507246377" y="-678.34821428571422"/>
         </scene>
+        <!--Patient report-->
+        <scene sceneID="z1N-3m-rqT">
+            <objects>
+                <tabBarController id="17z-Iy-P3f" customClass="HomeController" customModule="PaRMonWC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Patient report" image="virus" id="hl5-s2-rUH"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b8D-6C-Pr5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PAA-Re-t3L" kind="relationship" relationship="viewControllers" id="7fh-ZA-5fJ"/>
+                        <segue destination="4wW-qG-9Bb" kind="relationship" relationship="viewControllers" id="C1g-Aq-pJ6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSh-nP-AAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="5mI-dU-tEA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="Q4C-zS-GDx"/>
+                    </items>
+                </navigationBar>
+            </objects>
+            <point key="canvasLocation" x="5545" y="-631"/>
+        </scene>
+        <!--Steps -->
+        <scene sceneID="m81-FV-1TK">
+            <objects>
+                <viewController restorationIdentifier="ChartController" storyboardIdentifier="BarChartController" id="PAA-Re-t3L" customClass="BarChartController" customModule="PaRMonWC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S94-PJ-K4W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-KT-kl8" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="20.5" y="45.5" width="373" height="717"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Week steps Chart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZd-fV-5ct">
+                                        <rect key="frame" x="135" y="8" width="108" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1aP-KT-kl8" firstAttribute="width" secondItem="S94-PJ-K4W" secondAttribute="width" multiplier="0.9" id="4G3-kr-8rI"/>
+                            <constraint firstItem="1aP-KT-kl8" firstAttribute="centerY" secondItem="23W-gA-727" secondAttribute="centerY" id="4k5-Fa-O3a"/>
+                            <constraint firstItem="1aP-KT-kl8" firstAttribute="height" secondItem="S94-PJ-K4W" secondAttribute="height" multiplier="0.8" id="Egw-Z5-Bht"/>
+                            <constraint firstItem="1aP-KT-kl8" firstAttribute="centerX" secondItem="23W-gA-727" secondAttribute="centerX" id="zdW-J3-FTb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="23W-gA-727"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Steps " image="footprints-3" id="UZl-n1-49v"/>
+                    <connections>
+                        <outlet property="barChart" destination="1aP-KT-kl8" id="fzX-Yh-LEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDv-Nn-gFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6013" y="100"/>
+        </scene>
+        <!--Heart rate-->
+        <scene sceneID="GBM-eU-vMC">
+            <objects>
+                <viewController id="4wW-qG-9Bb" customClass="HeartViewController" customModule="PaRMonWC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppM-TZ-NA9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Xsn-D9-ANB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Heart rate" image="heart" id="Llw-8W-e4G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEh-Fp-NNn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5223" y="100"/>
+        </scene>
+        <!--MedicationTableViewController-->
+        <scene sceneID="KGt-Vi-Pkw">
+            <objects>
+                <tableViewController title="MedicationTableViewController" id="UfX-Wp-mKf" customClass="PatientDosesTableViewController" customModule="PaRMonWC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="jyq-J8-HV5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="9cM-Iy-1ar" detailTextLabel="K5D-Yg-Uq6" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="gG9-1l-9KO">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gG9-1l-9KO" id="rGU-V3-UoR">
+                                    <rect key="frame" x="0.0" y="0.0" width="351" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9cM-Iy-1ar">
+                                            <rect key="frame" x="20" y="7" width="35" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K5D-Yg-Uq6">
+                                            <rect key="frame" x="20" y="35" width="41.5" height="16.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UfX-Wp-mKf" id="NQ7-pR-4ku"/>
+                            <outlet property="delegate" destination="UfX-Wp-mKf" id="CMe-zk-2n0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Medications" id="rB6-3M-K76"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnf-8v-BYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="3225.6696428571427"/>
+        </scene>
+        <!--Dosege-->
+        <scene sceneID="Xno-C0-euI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vhj-iT-97Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dosege" image="bandage" catalog="system" id="RTO-J0-reS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5CJ-5J-5J7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UfX-Wp-mKf" kind="relationship" relationship="rootViewController" id="c5H-bg-LuZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DW4-42-BIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="3225.6696428571427"/>
+        </scene>
     </scenes>
     <resources>
         <image name="2208618C-39AB-4584-874C-22B6F0902E25" width="713" height="952"/>
         <image name="Light - 4 Tabs" width="18" height="20"/>
         <image name="Logout" width="512" height="512"/>
         <image name="Rectangle" width="343" height="477"/>
-        <image name="archivebox" catalog="system" width="64" height="52"/>
         <image name="background" width="375" height="809"/>
+        <image name="bandage" catalog="system" width="64" height="58"/>
         <image name="bell" catalog="system" width="64" height="62"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="doctor-1" width="173" height="173"/>
+        <image name="footprints-3" width="32" height="32"/>
         <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="heart" width="32" height="32"/>
         <image name="home page pdp" width="750" height="1618"/>
         <image name="home page pdp-2" width="750" height="1618"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="logowhite-1" width="1035" height="337"/>
         <image name="patient" width="173" height="173"/>
         <image name="smiley" catalog="system" width="64" height="60"/>
+        <image name="virus" width="32" height="32"/>
         <image name="waveform.path" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hWF-9o-wjP"/>
         <segue reference="Mgf-UT-6Bn"/>
     </inferredMetricsTieBreakers>
 </document>
