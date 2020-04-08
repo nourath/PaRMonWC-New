@@ -18,7 +18,6 @@
 		3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */; };
 		3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */; };
 		3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCE12419870200426D90 /* PatientHomeViewController.swift */; };
-		3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */; };
 		3D757A13243BC0E4006947BB /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757A12243BC0E4006947BB /* ReminderManager.swift */; };
 		3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757A14243BC146006947BB /* Reminder1ViewController.swift */; };
 		3D757A17243BC180006947BB /* Reminder2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757A16243BC180006947BB /* Reminder2ViewController.swift */; };
@@ -38,13 +37,13 @@
 		3DC6628723FC1219009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6628623FC1219009486E8 /* Assets.xcassets */; };
 		3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */; };
 		3DFB0EB2241B0B2D00698915 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0EB0241B0B2D00698915 /* User.swift */; };
+		52575C9B243E0A3700BEBEDE /* PatientDosegeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52575C9A243E0A3700BEBEDE /* PatientDosegeTableViewController.swift */; };
 		526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */; };
 		526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F122436BF3C00C15B1C /* PatientProfileController.swift */; };
 		52877B2C24353ADC00CD2560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52877B2B24353ADC00CD2560 /* GoogleService-Info.plist */; };
 		52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */; };
 		52877B30243557AC00CD2560 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B2F243557AC00CD2560 /* Patient.swift */; };
 		52877B322435581F00CD2560 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B312435581F00CD2560 /* Medication.swift */; };
-		52CF3C12243D3A5E00E30C54 /* PatientDosegeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */; };
 		69F33E007475A050E853547E /* Pods_PaRMonWC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */; };
 		884130BA243D312400843663 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884130B9243D312400843663 /* HealthKit.framework */; };
 		884130C2243D63A300843663 /* chartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130C1243D63A300843663 /* chartController.swift */; };
@@ -100,7 +99,6 @@
 		01F690BA80C54A4F5681DB07 /* Pods-PaRMonWC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC.release.xcconfig"; sourceTree = "<group>"; };
 		3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTabBarController.swift; sourceTree = "<group>"; };
-		3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMedicationTableTableViewController.swift; sourceTree = "<group>"; };
 		3D59CCCB2419828300426D90 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3D59CCCD241982B100426D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D59CCD1241984DA00426D90 /* PatientIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIntroViewController.swift; sourceTree = "<group>"; };
@@ -135,13 +133,13 @@
 		3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationTableViewController.swift; sourceTree = "<group>"; };
 		3DFB0EB0241B0B2D00698915 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52575C9A243E0A3700BEBEDE /* PatientDosegeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDosegeTableViewController.swift; sourceTree = "<group>"; };
 		526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianPatientsTabBarContoller.swift; sourceTree = "<group>"; };
 		526D0F122436BF3C00C15B1C /* PatientProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileController.swift; sourceTree = "<group>"; };
 		52877B2B24353ADC00CD2560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianProfileViewController.swift; sourceTree = "<group>"; };
 		52877B2F243557AC00CD2560 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		52877B312435581F00CD2560 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
-		52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientDosegeTableViewController.swift; path = "../../../../Downloads/PaRMonWC-New-master/PaRMonWC/ViewControllers/PatientDosegeTableViewController.swift"; sourceTree = "<group>"; };
 		52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5798C172D932DE24F2E0FCD6 /* Pods-PaRMonWC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC.debug.xcconfig"; sourceTree = "<group>"; };
 		6C11B73F9F828B2AE3706DEA /* Pods-PaRMonWC WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit App/Pods-PaRMonWC WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,14 +189,12 @@
 				884130C1243D63A300843663 /* chartController.swift */,
 				884130C3243D641100843663 /* HomeController.swift */,
 				884130C5243D645A00843663 /* HealthKitAssistant.swift */,
-				52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */,
 				3DC6625F23FC1212009486E8 /* ViewController.swift */,
 				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
 				3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */,
 				3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */,
 				3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */,
 				3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */,
-				3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */,
 				3D59CCD1241984DA00426D90 /* PatientIntroViewController.swift */,
 				3D59CCD52419860300426D90 /* PatientSignUpViewController.swift */,
 				3D59CCD72419862100426D90 /* PatientLoginViewController.swift */,
@@ -209,6 +205,7 @@
 				526D0F122436BF3C00C15B1C /* PatientProfileController.swift */,
 				3D757A14243BC146006947BB /* Reminder1ViewController.swift */,
 				3D757A16243BC180006947BB /* Reminder2ViewController.swift */,
+				52575C9A243E0A3700BEBEDE /* PatientDosegeTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -555,8 +552,8 @@
 				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
 				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
 				3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */,
-				52CF3C12243D3A5E00E30C54 /* PatientDosegeTableViewController.swift in Sources */,
 				3D59CCCE241982B100426D90 /* Constants.swift in Sources */,
+				52575C9B243E0A3700BEBEDE /* PatientDosegeTableViewController.swift in Sources */,
 				3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */,
 				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
 				3DFB0EB2241B0B2D00698915 /* User.swift in Sources */,
@@ -578,7 +575,6 @@
 				884130C2243D63A300843663 /* chartController.swift in Sources */,
 				884130C6243D645A00843663 /* HealthKitAssistant.swift in Sources */,
 				3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */,
-				3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */,
 				526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */,
 				3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */,
 			);
