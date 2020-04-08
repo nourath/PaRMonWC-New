@@ -301,14 +301,14 @@
                                 <rect key="frame" x="-6" y="-92" width="427" height="934"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-MD-9EM">
-                                <rect key="frame" x="120.5" y="230" width="173" height="173"/>
+                                <rect key="frame" x="34" y="-116" width="346" height="346"/>
                                 <state key="normal" image="doctor-1"/>
                                 <connections>
                                     <segue destination="xiU-v3-JUY" kind="show" id="7dE-hz-hWr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-pv-iz1">
-                                <rect key="frame" x="120.5" y="449" width="173" height="173"/>
+                                <rect key="frame" x="34" y="276" width="346" height="346"/>
                                 <state key="normal" image="patient"/>
                                 <connections>
                                     <segue destination="qmr-Ys-0OX" kind="show" id="NpZ-Kc-Zqb"/>
@@ -685,7 +685,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home page pdp" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-wn-urx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Noura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-Jb-b6j">
                                 <rect key="frame" x="186" y="437" width="47" height="21"/>
@@ -903,7 +903,7 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor-1" translatesAutoresizingMaskIntoConstraints="NO" id="7iM-UR-4IK">
-                                <rect key="frame" x="119" y="68" width="176" height="173"/>
+                                <rect key="frame" x="119" y="68" width="176" height="346"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

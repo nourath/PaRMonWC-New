@@ -46,10 +46,10 @@
 		52877B322435581F00CD2560 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52877B312435581F00CD2560 /* Medication.swift */; };
 		52CF3C12243D3A5E00E30C54 /* PatientDosegeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */; };
 		69F33E007475A050E853547E /* Pods_PaRMonWC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */; };
-		884130B3243D30F700843663 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130B2243D30F700843663 /* HealthKitAssistant.swift */; };
-		884130B5243D310100843663 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130B4243D310000843663 /* HomeController.swift */; };
-		884130B7243D310500843663 /* chartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130B6243D310500843663 /* chartController.swift */; };
 		884130BA243D312400843663 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884130B9243D312400843663 /* HealthKit.framework */; };
+		884130BC243D4D9800843663 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130BB243D4D9700843663 /* HealthKitAssistant.swift */; };
+		884130BE243D4E0500843663 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130BD243D4E0500843663 /* HomeController.swift */; };
+		884130C0243D4E5C00843663 /* chartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884130BF243D4E5C00843663 /* chartController.swift */; };
 		BBA08D8678734276384C5BEB /* Pods_PaRMonWC_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C324BC00740FB96FD47229E /* Pods_PaRMonWC_WatchKit_Extension.framework */; };
 		C469F560DB61E618DC62C1D3 /* Pods_PaRMonWC_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
@@ -147,11 +147,11 @@
 		6C11B73F9F828B2AE3706DEA /* Pods-PaRMonWC WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit App/Pods-PaRMonWC WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		6C324BC00740FB96FD47229E /* Pods_PaRMonWC_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D1C5C2AB875A703B19EA36 /* Pods-PaRMonWC WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit Extension/Pods-PaRMonWC WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		884130B2243D30F700843663 /* HealthKitAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitAssistant.swift; path = "../../../Downloads/WHAT WORKED/LAST/HealthKit-Chart-LAST/HealthKit-Chart/HealthKitAssistant.swift"; sourceTree = "<group>"; };
-		884130B4243D310000843663 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = "../../../Downloads/WHAT WORKED/LAST/HealthKit-Chart-LAST/HealthKit-Chart/Controller/HomeController.swift"; sourceTree = "<group>"; };
-		884130B6243D310500843663 /* chartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chartController.swift; path = "../../../Downloads/WHAT WORKED/LAST/HealthKit-Chart-LAST/HealthKit-Chart/Controller/chartController.swift"; sourceTree = "<group>"; };
 		884130B8243D312400843663 /* PaRMonWC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaRMonWC.entitlements; sourceTree = "<group>"; };
 		884130B9243D312400843663 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		884130BB243D4D9700843663 /* HealthKitAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitAssistant.swift; path = "../../../Downloads/WHAT WORKED/LAST/HealthKit-Chart-LAST/HealthKit-Chart/HealthKitAssistant.swift"; sourceTree = "<group>"; };
+		884130BD243D4E0500843663 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = "../../../Downloads/WHAT WORKED/LAST/HealthKit-Chart-LAST/HealthKit-Chart/Controller/HomeController.swift"; sourceTree = "<group>"; };
+		884130BF243D4E5C00843663 /* chartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chartController.swift; path = "../../../Downloads/WHAT WORKED/LAST/HealthKit-Chart-LAST/HealthKit-Chart/Controller/chartController.swift"; sourceTree = "<group>"; };
 		A58EB8D5B19ECB8A61D14B31 /* Pods-PaRMonWC WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit App/Pods-PaRMonWC WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		F3165282E15776F3DC39D934 /* Pods-PaRMonWC WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-PaRMonWC WatchKit Extension/Pods-PaRMonWC WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +188,9 @@
 		3D59CCE32419876A00426D90 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				884130BF243D4E5C00843663 /* chartController.swift */,
+				884130BD243D4E0500843663 /* HomeController.swift */,
+				884130BB243D4D9700843663 /* HealthKitAssistant.swift */,
 				52CF3C11243D3A5E00E30C54 /* PatientDosegeTableViewController.swift */,
 				3DC6625F23FC1212009486E8 /* ViewController.swift */,
 				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
@@ -206,9 +209,6 @@
 				526D0F122436BF3C00C15B1C /* PatientProfileController.swift */,
 				3D757A14243BC146006947BB /* Reminder1ViewController.swift */,
 				3D757A16243BC180006947BB /* Reminder2ViewController.swift */,
-				884130B2243D30F700843663 /* HealthKitAssistant.swift */,
-				884130B4243D310000843663 /* HomeController.swift */,
-				884130B6243D310500843663 /* chartController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -554,13 +554,14 @@
 			files = (
 				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
 				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
+				884130BC243D4D9800843663 /* HealthKitAssistant.swift in Sources */,
 				3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */,
 				52CF3C12243D3A5E00E30C54 /* PatientDosegeTableViewController.swift in Sources */,
 				3D59CCCE241982B100426D90 /* Constants.swift in Sources */,
 				3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */,
 				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
+				884130C0243D4E5C00843663 /* chartController.swift in Sources */,
 				3DFB0EB2241B0B2D00698915 /* User.swift in Sources */,
-				884130B3243D30F700843663 /* HealthKitAssistant.swift in Sources */,
 				3D59CCD82419862100426D90 /* PatientLoginViewController.swift in Sources */,
 				3D59CCD62419860300426D90 /* PatientSignUpViewController.swift in Sources */,
 				3D59CCDC2419867F00426D90 /* PhysicianSignUpViewController.swift in Sources */,
@@ -568,16 +569,15 @@
 				3D59CCD4241985DE00426D90 /* PhysicianIntroViewController.swift in Sources */,
 				3DC6625C23FC1212009486E8 /* AppDelegate.swift in Sources */,
 				3D59CCCC2419828300426D90 /* Utilities.swift in Sources */,
+				884130BE243D4E0500843663 /* HomeController.swift in Sources */,
 				52877B30243557AC00CD2560 /* Patient.swift in Sources */,
 				52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */,
 				3D757A17243BC180006947BB /* Reminder2ViewController.swift in Sources */,
-				884130B7243D310500843663 /* chartController.swift in Sources */,
 				3D59CCD2241984DA00426D90 /* PatientIntroViewController.swift in Sources */,
 				3DC6625E23FC1212009486E8 /* SceneDelegate.swift in Sources */,
 				3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */,
 				52877B322435581F00CD2560 /* Medication.swift in Sources */,
 				3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */,
-				884130B5243D310100843663 /* HomeController.swift in Sources */,
 				3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */,
 				526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */,
 				3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */,
