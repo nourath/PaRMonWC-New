@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Alarm Sound Files</key>
+	<array>
+		<string>alarm_fading</string>
+		<string>alarm_digtal</string>
+		<string>alarm_perfect</string>
+		<string>alarm_simple</string>
+		<string>alarm_trilla</string>
+	</array>
+	<key>Alarm Sound Names</key>
+	<array>
+		<string>Fading</string>
+		<string>Digital</string>
+		<string>Perfect</string>
+		<string>Simple</string>
+		<string>Trilla</string>
+	</array>
+</dict>
+</plist>

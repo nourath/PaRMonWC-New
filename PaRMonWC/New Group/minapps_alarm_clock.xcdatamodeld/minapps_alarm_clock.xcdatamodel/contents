@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AlarmEntity_CoreData" representedClassName="AlarmEntity_CoreData" syncable="YES" codeGenerationType="class">
+        <attribute name="alarmEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="alarmName" optional="YES" attributeType="String"/>
+        <attribute name="repeatOnFriday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repeatOnMonday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repeatOnSaturday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repeatOnSunday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repeatOnThursday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repeatOnTuesday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="repeatOnWednesday" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="snoozeDuration" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="snoozeEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="soundIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="soundName" optional="YES" attributeType="String"/>
+        <attribute name="timeHour24" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timeMinute" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="AlarmEntity_CoreData" positionX="-63" positionY="-18" width="128" height="268"/>
+    </elements>
+</model>

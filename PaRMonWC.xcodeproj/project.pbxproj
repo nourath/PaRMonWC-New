@@ -48,6 +48,30 @@
 		3DC6628523FC1218009486E8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628423FC1218009486E8 /* NotificationController.swift */; };
 		3DC6628723FC1219009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6628623FC1219009486E8 /* Assets.xcassets */; };
 		3DF26256243F8994000DEE54 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26255243F8994000DEE54 /* Status.swift */; };
+		3DF2625C243FB5D3000DEE54 /* RingingAlarmLaunchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */; };
+		3DF2625E243FB5FC000DEE54 /* ClockTimeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */; };
+		3DF26260243FB61B000DEE54 /* AlarmUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2625F243FB61B000DEE54 /* AlarmUtility.swift */; };
+		3DF26262243FB641000DEE54 /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26261243FB641000DEE54 /* SettingService.swift */; };
+		3DF26264243FB65C000DEE54 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26263243FB65C000DEE54 /* DeviceService.swift */; };
+		3DF26266243FB915000DEE54 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26265243FB915000DEE54 /* CoreDataService.swift */; };
+		3DF26268243FB96B000DEE54 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26267243FB96B000DEE54 /* AlarmService.swift */; };
+		3DF2626A243FB9A6000DEE54 /* UserNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26269243FB9A6000DEE54 /* UserNotificationService.swift */; };
+		3DF2626C243FB9E7000DEE54 /* ClockTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2626B243FB9E7000DEE54 /* ClockTimeData.swift */; };
+		3DF2626E243FBA03000DEE54 /* TimeMeridiem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2626D243FBA03000DEE54 /* TimeMeridiem.swift */; };
+		3DF26270243FBA4C000DEE54 /* ClockDateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2626F243FBA4C000DEE54 /* ClockDateData.swift */; };
+		3DF26272243FBA67000DEE54 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26271243FBA67000DEE54 /* AlarmListCell.swift */; };
+		3DF26274243FBAA8000DEE54 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26273243FBAA8000DEE54 /* ClockViewController.swift */; };
+		3DF26276243FBAD0000DEE54 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */; };
+		3DF26278243FBAF8000DEE54 /* ModifyAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */; };
+		3DF2627A243FBB13000DEE54 /* RingingAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26279243FBB13000DEE54 /* RingingAlarmViewController.swift */; };
+		3DF2627D243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2627B243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld */; };
+		3DF26283243FC706000DEE54 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26282243FC706000DEE54 /* Settings.bundle */; };
+		3DF2628A243FC7D9000DEE54 /* alarm_fading.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26285243FC7D8000DEE54 /* alarm_fading.wav */; };
+		3DF2628B243FC7D9000DEE54 /* alarm_perfect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26286243FC7D8000DEE54 /* alarm_perfect.wav */; };
+		3DF2628C243FC7D9000DEE54 /* alarm_trilla.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26287243FC7D8000DEE54 /* alarm_trilla.wav */; };
+		3DF2628D243FC7D9000DEE54 /* alarm_digital.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26288243FC7D9000DEE54 /* alarm_digital.wav */; };
+		3DF2628E243FC7D9000DEE54 /* alarm_simple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26289243FC7D9000DEE54 /* alarm_simple.wav */; };
+		3DF26290243FC7FA000DEE54 /* AlarmSounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2628F243FC7FA000DEE54 /* AlarmSounds.plist */; };
 		3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */; };
 		3DFB0EB2241B0B2D00698915 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0EB0241B0B2D00698915 /* User.swift */; };
 		526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */; };
@@ -156,6 +180,30 @@
 		3DC6628823FC1219009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3DF26255243F8994000DEE54 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingAlarmLaunchable.swift; sourceTree = "<group>"; };
+		3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTimeUtility.swift; sourceTree = "<group>"; };
+		3DF2625F243FB61B000DEE54 /* AlarmUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmUtility.swift; sourceTree = "<group>"; };
+		3DF26261243FB641000DEE54 /* SettingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
+		3DF26263243FB65C000DEE54 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		3DF26265243FB915000DEE54 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		3DF26267243FB96B000DEE54 /* AlarmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
+		3DF26269243FB9A6000DEE54 /* UserNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationService.swift; sourceTree = "<group>"; };
+		3DF2626B243FB9E7000DEE54 /* ClockTimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTimeData.swift; sourceTree = "<group>"; };
+		3DF2626D243FBA03000DEE54 /* TimeMeridiem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMeridiem.swift; sourceTree = "<group>"; };
+		3DF2626F243FBA4C000DEE54 /* ClockDateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockDateData.swift; sourceTree = "<group>"; };
+		3DF26271243FBA67000DEE54 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		3DF26273243FBAA8000DEE54 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
+		3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyAlarmViewController.swift; sourceTree = "<group>"; };
+		3DF26279243FBB13000DEE54 /* RingingAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingAlarmViewController.swift; sourceTree = "<group>"; };
+		3DF2627C243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = minapps_alarm_clock.xcdatamodel; sourceTree = "<group>"; };
+		3DF26282243FC706000DEE54 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3DF26285243FC7D8000DEE54 /* alarm_fading.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_fading.wav; sourceTree = "<group>"; };
+		3DF26286243FC7D8000DEE54 /* alarm_perfect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_perfect.wav; sourceTree = "<group>"; };
+		3DF26287243FC7D8000DEE54 /* alarm_trilla.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_trilla.wav; sourceTree = "<group>"; };
+		3DF26288243FC7D9000DEE54 /* alarm_digital.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_digital.wav; sourceTree = "<group>"; };
+		3DF26289243FC7D9000DEE54 /* alarm_simple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_simple.wav; sourceTree = "<group>"; };
+		3DF2628F243FC7FA000DEE54 /* AlarmSounds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AlarmSounds.plist; sourceTree = "<group>"; };
 		3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationTableViewController.swift; sourceTree = "<group>"; };
 		3DFB0EB0241B0B2D00698915 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianPatientsTabBarContoller.swift; sourceTree = "<group>"; };
@@ -297,6 +345,7 @@
 				884130B8243D312400843663 /* PaRMonWC.entitlements */,
 				3DC6625B23FC1212009486E8 /* AppDelegate.swift */,
 				3DC6625D23FC1212009486E8 /* SceneDelegate.swift */,
+				3DF2625A243FB581000DEE54 /* New Group */,
 				3D70BCCA243E8CC6000D2D71 /* Extensions */,
 				3DFB0EC2241B126900698915 /* Models */,
 				3D59CCE524198A1A00426D90 /* Helpers */,
@@ -306,6 +355,7 @@
 				3DC6626623FC1216009486E8 /* LaunchScreen.storyboard */,
 				52877B2B24353ADC00CD2560 /* GoogleService-Info.plist */,
 				3DC6626923FC1216009486E8 /* Info.plist */,
+				3DF26282243FC706000DEE54 /* Settings.bundle */,
 			);
 			path = PaRMonWC;
 			sourceTree = "<group>";
@@ -331,6 +381,44 @@
 				3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */,
 			);
 			path = "PaRMonWC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3DF2625A243FB581000DEE54 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3DF26284243FC7B2000DEE54 /* Sounds */,
+				3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */,
+				3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */,
+				3DF2625F243FB61B000DEE54 /* AlarmUtility.swift */,
+				3DF26261243FB641000DEE54 /* SettingService.swift */,
+				3DF26263243FB65C000DEE54 /* DeviceService.swift */,
+				3DF26265243FB915000DEE54 /* CoreDataService.swift */,
+				3DF26267243FB96B000DEE54 /* AlarmService.swift */,
+				3DF26269243FB9A6000DEE54 /* UserNotificationService.swift */,
+				3DF2626B243FB9E7000DEE54 /* ClockTimeData.swift */,
+				3DF2626D243FBA03000DEE54 /* TimeMeridiem.swift */,
+				3DF2626F243FBA4C000DEE54 /* ClockDateData.swift */,
+				3DF26271243FBA67000DEE54 /* AlarmListCell.swift */,
+				3DF26273243FBAA8000DEE54 /* ClockViewController.swift */,
+				3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */,
+				3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */,
+				3DF26279243FBB13000DEE54 /* RingingAlarmViewController.swift */,
+				3DF2627B243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3DF26284243FC7B2000DEE54 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3DF26288243FC7D9000DEE54 /* alarm_digital.wav */,
+				3DF26285243FC7D8000DEE54 /* alarm_fading.wav */,
+				3DF26286243FC7D8000DEE54 /* alarm_perfect.wav */,
+				3DF26289243FC7D9000DEE54 /* alarm_simple.wav */,
+				3DF26287243FC7D8000DEE54 /* alarm_trilla.wav */,
+				3DF2628F243FC7FA000DEE54 /* AlarmSounds.plist */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		3DFB0EC2241B126900698915 /* Models */ = {
@@ -484,9 +572,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF2628C243FC7D9000DEE54 /* alarm_trilla.wav in Resources */,
 				3DC6626823FC1216009486E8 /* LaunchScreen.storyboard in Resources */,
+				3DF2628A243FC7D9000DEE54 /* alarm_fading.wav in Resources */,
+				3DF26290243FC7FA000DEE54 /* AlarmSounds.plist in Resources */,
 				52877B2C24353ADC00CD2560 /* GoogleService-Info.plist in Resources */,
+				3DF2628E243FC7D9000DEE54 /* alarm_simple.wav in Resources */,
+				3DF2628D243FC7D9000DEE54 /* alarm_digital.wav in Resources */,
+				3DF26283243FC706000DEE54 /* Settings.bundle in Resources */,
 				3DC6626523FC1216009486E8 /* Assets.xcassets in Resources */,
+				3DF2628B243FC7D9000DEE54 /* alarm_perfect.wav in Resources */,
 				3DC6626323FC1212009486E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,16 +698,25 @@
 			files = (
 				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
 				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
+				3DF2627A243FBB13000DEE54 /* RingingAlarmViewController.swift in Sources */,
+				3DF2626E243FBA03000DEE54 /* TimeMeridiem.swift in Sources */,
 				3D70BCD2243E8D7A000D2D71 /* TremorEntry.swift in Sources */,
+				3DF26276243FBAD0000DEE54 /* AlarmListViewController.swift in Sources */,
+				3DF2625C243FB5D3000DEE54 /* RingingAlarmLaunchable.swift in Sources */,
 				3D62E10F243D8E5B00729309 /* GyroLineChartViewController.swift in Sources */,
 				3D70BCDC243E9D2C000D2D71 /* moodEntryTableViewCell.swift in Sources */,
 				3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */,
 				3D59CCCE241982B100426D90 /* Constants.swift in Sources */,
+				3DF26278243FBAF8000DEE54 /* ModifyAlarmViewController.swift in Sources */,
 				3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */,
 				3D70BCCC243E8CDB000D2D71 /* DateString.swift in Sources */,
 				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
+				3DF26270243FBA4C000DEE54 /* ClockDateData.swift in Sources */,
+				3DF26274243FBAA8000DEE54 /* ClockViewController.swift in Sources */,
+				3DF2627D243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld in Sources */,
 				3DFB0EB2241B0B2D00698915 /* User.swift in Sources */,
 				3DF26256243F8994000DEE54 /* Status.swift in Sources */,
+				3DF26268243FB96B000DEE54 /* AlarmService.swift in Sources */,
 				3D70BCD8243E96D0000D2D71 /* PatientLogsViewController.swift in Sources */,
 				3D59CCD82419862100426D90 /* PatientLoginViewController.swift in Sources */,
 				3D70BCDA243E9A40000D2D71 /* PatientLogsTableViewController.swift in Sources */,
@@ -620,8 +724,10 @@
 				3D59CCDC2419867F00426D90 /* PhysicianSignUpViewController.swift in Sources */,
 				3D757A13243BC0E4006947BB /* ReminderManager.swift in Sources */,
 				3D70BCE0243EB2F5000D2D71 /* PhysicianPatientLogsTableViewCell.swift in Sources */,
+				3DF2626C243FB9E7000DEE54 /* ClockTimeData.swift in Sources */,
 				3D59CCD4241985DE00426D90 /* PhysicianIntroViewController.swift in Sources */,
 				3DC6625C23FC1212009486E8 /* AppDelegate.swift in Sources */,
+				3DF2625E243FB5FC000DEE54 /* ClockTimeUtility.swift in Sources */,
 				3D70BCDE243E9D54000D2D71 /* tremorEntryTableViewCell.swift in Sources */,
 				3D59CCCC2419828300426D90 /* Utilities.swift in Sources */,
 				52877B30243557AC00CD2560 /* Patient.swift in Sources */,
@@ -629,6 +735,8 @@
 				52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */,
 				3D757A17243BC180006947BB /* Reminder2ViewController.swift in Sources */,
 				3D59CCD2241984DA00426D90 /* PatientIntroViewController.swift in Sources */,
+				3DF2626A243FB9A6000DEE54 /* UserNotificationService.swift in Sources */,
+				3DF26272243FBA67000DEE54 /* AlarmListCell.swift in Sources */,
 				3DC6625E23FC1212009486E8 /* SceneDelegate.swift in Sources */,
 				3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */,
 				3D62E113243D960A00729309 /* PatientDosesTableViewController.swift in Sources */,
@@ -637,10 +745,14 @@
 				884130C2243D63A300843663 /* chartController.swift in Sources */,
 				884130C6243D645A00843663 /* HealthKitAssistant.swift in Sources */,
 				3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */,
+				3DF26262243FB641000DEE54 /* SettingService.swift in Sources */,
 				3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */,
 				526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */,
 				3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */,
 				3D70BCD0243E8D6D000D2D71 /* MoodEntry.swift in Sources */,
+				3DF26260243FB61B000DEE54 /* AlarmUtility.swift in Sources */,
+				3DF26266243FB915000DEE54 /* CoreDataService.swift in Sources */,
+				3DF26264243FB65C000DEE54 /* DeviceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +1093,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DF2627B243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DF2627C243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodel */,
+			);
+			currentVersion = 3DF2627C243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodel */;
+			path = minapps_alarm_clock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3DC6625023FC1212009486E8 /* Project object */;
 }
