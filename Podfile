@@ -19,6 +19,7 @@ pod 'Firebase/Database'
 pod 'Eureka'
 pod 'Charts'
 pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
+pod 'LineChart'
 
 end
 
