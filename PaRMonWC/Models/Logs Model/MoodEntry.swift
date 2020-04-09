@@ -53,6 +53,12 @@ struct MoodEntry {
     var mood: Mood
     var date: Date
     
+    func toAnyObject() -> Any {
+      return [
+          "mood": mood,
+        "date": date
+      ]
+    }
     
 }
 

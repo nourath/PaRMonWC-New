@@ -51,6 +51,13 @@ import Firebase
         var tremor: Tremor
         var date: Date
         
+           func toAnyObject() -> Any {
+             return [
+                 "tremor": tremor,
+               "date": date
+             ]
+           }
+           
     }
 
 

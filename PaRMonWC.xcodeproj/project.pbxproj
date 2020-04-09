@@ -47,6 +47,7 @@
 		3DC6628323FC1218009486E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */; };
 		3DC6628523FC1218009486E8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628423FC1218009486E8 /* NotificationController.swift */; };
 		3DC6628723FC1219009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6628623FC1219009486E8 /* Assets.xcassets */; };
+		3DF26256243F8994000DEE54 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26255243F8994000DEE54 /* Status.swift */; };
 		3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */; };
 		3DFB0EB2241B0B2D00698915 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0EB0241B0B2D00698915 /* User.swift */; };
 		526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */; };
@@ -154,6 +155,7 @@
 		3DC6628623FC1219009486E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC6628823FC1219009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3DF26255243F8994000DEE54 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationTableViewController.swift; sourceTree = "<group>"; };
 		3DFB0EB0241B0B2D00698915 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianPatientsTabBarContoller.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			children = (
 				3D70BCCF243E8D6D000D2D71 /* MoodEntry.swift */,
 				3D70BCD1243E8D7A000D2D71 /* TremorEntry.swift */,
+				3DF26255243F8994000DEE54 /* Status.swift */,
 			);
 			path = "Logs Model";
 			sourceTree = "<group>";
@@ -343,9 +346,9 @@
 		3DFB0EE2241B12F400698915 /* Medication Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DFB0EB0241B0B2D00698915 /* User.swift */,
 				52877B312435581F00CD2560 /* Medication.swift */,
 				52877B2F243557AC00CD2560 /* Patient.swift */,
-				3DFB0EB0241B0B2D00698915 /* User.swift */,
 			);
 			path = "Medication Model";
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				3D70BCCC243E8CDB000D2D71 /* DateString.swift in Sources */,
 				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
 				3DFB0EB2241B0B2D00698915 /* User.swift in Sources */,
+				3DF26256243F8994000DEE54 /* Status.swift in Sources */,
 				3D70BCD8243E96D0000D2D71 /* PatientLogsViewController.swift in Sources */,
 				3D59CCD82419862100426D90 /* PatientLoginViewController.swift in Sources */,
 				3D70BCDA243E9A40000D2D71 /* PatientLogsTableViewController.swift in Sources */,

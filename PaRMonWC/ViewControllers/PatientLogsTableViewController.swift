@@ -161,13 +161,13 @@ class PatientLogsTableViewController: UIViewController{
 
     
     //initial value of mood
-        let happyEntry = MoodEntry(mood: .happy, date: Date())
-        moodEntries = [happyEntry]
+    //let happyEntry = MoodEntry(mood: .happy, date: Date())
+    //moodEntries = [happyEntry]
         MoodTableView.reloadData()
     
     //initial value of mood
-        let onEntry = TremorEntry(tremor: .on, date: Date())
-           tremorEntries = [onEntry]
+   //     let onEntry = TremorEntry(tremor: .on, date: Date())
+   //        tremorEntries = [onEntry]
            TremorTableView.reloadData()
     }
     override func viewWillAppear(_ animated: Bool) {
