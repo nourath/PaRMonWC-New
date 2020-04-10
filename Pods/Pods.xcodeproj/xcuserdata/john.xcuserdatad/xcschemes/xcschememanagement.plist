@@ -144,33 +144,40 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
-		<key>Pods-PaRMonWC WatchKit App.xcscheme</key>
+		<key>LineChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>25</integer>
 		</dict>
-		<key>Pods-PaRMonWC WatchKit Extension.xcscheme</key>
+		<key>Pods-PaRMonWC WatchKit App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>28</integer>
 		</dict>
+		<key>Pods-PaRMonWC WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>Pods-PaRMonWC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>27</integer>
 		</dict>
 		<key>PromisesObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>30</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>
@@ -212,7 +219,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>26</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -25,7 +25,7 @@ class PatientLogsViewController: UIViewController {
     var date: Date!
     var mood: MoodEntry.Mood!
     var tremor: TremorEntry.Tremor!
-    var index : Int!
+    var counter = 0
     var isEditingEntry = false
     
     private func updateUI() {
@@ -131,13 +131,28 @@ class PatientLogsViewController: UIViewController {
     
     
     @IBAction func pressSave(_ sender: UIBarButtonItem) {
+        let statusDB = Database.database().reference(withPath: "Status")
+          let qRef = statusDB.queryLimited(toLast: 1)
 
-            //creating reference to fire base database
-            let ref = Database.database().reference()
-            //putting data inside a dictionary
-            let dict = ["tremor":tremor.stringValue,"mood":mood.stringValue,"date":date.stringValue]
-            //inserting value to firebase
-            ref.child("Status/\(index!)").setValue(dict)
+          qRef.observeSingleEvent(of: .value, with: { snapshot in
+              for child in snapshot.children {
+                  let item = child as! DataSnapshot
+                self.counter = Int(item.key) ?? 0
+                self.counter = self.counter + 1
+              }
+              let userId = Auth.auth().currentUser?.uid
+                  //creating reference to fire base database
+              
+              let statusRef = statusDB.child(String(self.counter))
+            let values: [String: Any] = [ "tremor": self.tremor.stringValue,
+                                          "mood": self.mood.stringValue,
+                                          "date": self.date.stringValue,
+                                            "uid": userId!]
+              statusRef.setValue(values)
+          })
+        
+        
+
         performSegue(withIdentifier: "unwind from save", sender: nil)
         
     }
@@ -146,7 +161,7 @@ class PatientLogsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        updateUI()
+        //updateUI()
     }
     
 

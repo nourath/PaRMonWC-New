@@ -17,9 +17,9 @@ class MedicationTableViewController: UITableViewController {
   var patient: Patient!
   var items: [Medication] = []
   var user: User!
-//  var userCountBarButtonItem: UIBarButtonItem!
+
     
-    // RealTime database References
+  // MARK: RealTime database References
   let rootRef =  Database.database().reference()
   let med = Database.database().reference(withPath: "medication")
   var medCounter = 1
@@ -28,13 +28,13 @@ class MedicationTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    //tableView.allowsMultipleSelectionDuringEditing = false
     let tabVC = self.tabBarController as! PhysicianPatientsTabBarController
     
     self.patient = tabVC.patient
     
     user = User(uid: "HDG12MLOQsY6AU6B3lhyogvZYAX2", email: "shoaa22n@gmail.com")
     
+    // MARK:  Retrieve medications from database and preview them in the screen.
     med.observe(.value, with: {
       snapshot in
         var newItems: [Medication] = []
@@ -69,18 +69,12 @@ class MedicationTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
-    print(items.count)
     
-//    else
-//    {
-        let medication = items[indexPath.row]
-        cell.textLabel?.text = medication.medName
-        cell.detailTextLabel?.text = "Dose: " + medication.dose + ", Time: "
-                                      + medication.time + ", Notes: "
-                                      + medication.notes
-    //}
-    
-    
+    let medication = items[indexPath.row]
+    cell.textLabel?.text = medication.medName
+    cell.detailTextLabel?.text = "Dose: " + medication.dose + ", Time: "
+                                  + medication.time + ", Notes: "
+                                  + medication.notes
     return cell
   }
   
@@ -98,7 +92,7 @@ class MedicationTableViewController: UITableViewController {
   }
   
     
-    // Update Medication
+  // MARK: Update Medication
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if let cell = tableView.cellForRow(at: indexPath) {
         if cell.accessoryType == .detailDisclosureButton{
@@ -106,7 +100,7 @@ class MedicationTableViewController: UITableViewController {
           let alert = UIAlertController(title: editMedName,
                                         message: nil,
                                       preferredStyle: .alert)
-//          print(indexPath.row)
+            
         alert.addTextField { (medNameTextField) in
             medNameTextField.text = cell.textLabel!.text!
             medNameTextField.placeholder = "Name:"
@@ -239,9 +233,4 @@ class MedicationTableViewController: UITableViewController {
     
     present(alert, animated: true, completion: nil)
   }
-  
-//  @objc func userCountButtonDidTouch() {
-//    performSegue(withIdentifier: listToUsers, sender: nil)
-//  }
-  
 }

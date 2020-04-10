@@ -19,7 +19,7 @@ class moodEntryTableViewCell: UITableViewCell {
     func configure(_ entry: MoodEntry){
         ImageViewMoodColor.backgroundColor = entry.mood.colorValue
         LabelMoodTitle.text = entry.mood.stringValue
-        LabelMoodDate.text = entry.date.stringValue
+        LabelMoodDate.text = entry.date
 
     }
 }

@@ -7,24 +7,80 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
+
 class PatientLogsTableViewController: UIViewController{
 
+    var patient: Patient!
     var moodEntries: [MoodEntry] = []
     var tremorEntries: [TremorEntry] = []
+    var statusList : [Status] = []
     var tempIndex = 0
       
+    // RealTime database References
+       let rootRef =  Database.database().reference()
+       let statusDB = Database.database().reference(withPath: "Status")
+    
+    override func viewDidLoad() {
+           super.viewDidLoad()
+        
+        
+      let userId = Auth.auth().currentUser?.uid
+
+       statusDB.observe(.value, with: {
+         snapshot in
+            self.moodEntries.removeAll()
+            self.tremorEntries.removeAll()
+            self.statusList.removeAll()
+           for item in snapshot.children {
+               
+                let status = Status(snapshot: item as! DataSnapshot)
+                if status.pid == userId
+                {
+                    self.statusList.append(status)
+                }
+           }
+            for status in self.statusList
+            {
+                //initial value of mood
+                let moodItem = MoodEntry(mood: self.getMoodValue(mood: status.mood), date: status.date)
+                self.moodEntries.append(moodItem)
+
+                //initial value of tremor
+                let tremorItem = TremorEntry(tremor: self.getTremorValue(tremor: status.tremor), date: status.date)
+                self.tremorEntries.append(tremorItem)
+            }
+        
+           self.MoodTableView.reloadData()
+           self.TremorTableView.reloadData()
+       })
+           // print(statusList.count)
+//            print("Mood List: " + String(moodEntries.count))
+//            print("Tremor List: " + String(tremorEntries.count))
+       }
+    
+       override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+       
+           if  let selectedIndexPath = MoodTableView.indexPathForSelectedRow {
+               MoodTableView.deselectRow(at: selectedIndexPath, animated: true)
+           }
+           else if let selectedIndexPath = TremorTableView.indexPathForSelectedRow {
+               TremorTableView.deselectRow(at: selectedIndexPath, animated: true)
+         }
+       }
     
      //Mood Table View
-       func createMoodEntry(mood: MoodEntry.Mood, date: Date) {
-           let newEntry = MoodEntry(mood: mood, date: date)
-           moodEntries.insert(newEntry, at: 0)
-           MoodTableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
-       }
+//       func createMoodEntry(mood: MoodEntry.Mood, date: Date) {
+//           let newEntry = MoodEntry(mood: mood, date: date.stringValue)
+//           //moodEntries.insert(newEntry, at: 0)
+////            moodEntries.append(newEntry)
+//           MoodTableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
+//       }
        
        func updateMoodEntry(mood: MoodEntry.Mood, date: Date, at index: Int) {
            moodEntries[index].mood = mood
-           moodEntries[index].date = date
+            moodEntries[index].date = date.stringValue
            MoodTableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
        }
        
@@ -35,14 +91,15 @@ class PatientLogsTableViewController: UIViewController{
        
        // Tremor Table View
     func createTremorEntry(tremor: TremorEntry.Tremor, date: Date) {
-        let newEntry = TremorEntry(tremor: tremor, date: date)
+        let newEntry = TremorEntry(tremor: tremor, date: date.stringValue)
         tremorEntries.insert(newEntry, at: 0)
+//        tremorEntries.append(newEntry)
         TremorTableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
     }
     
     func updateTremorEntry(tremor: TremorEntry.Tremor, date: Date, at index: Int) {
         tremorEntries[index].tremor = tremor
-        tremorEntries[index].date = date
+        tremorEntries[index].date = date.stringValue
         TremorTableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
@@ -66,7 +123,7 @@ class PatientLogsTableViewController: UIViewController{
                    EntryViewController.mood = MoodEntry.Mood.none
                    EntryViewController.tremor = TremorEntry.Tremor.none
                    EntryViewController.date = Date()
-                   EntryViewController.index = moodEntries.count
+//                   EntryViewController.counter = moodEntries.count
                     // stop here
                 
                case "show mood entry details":
@@ -82,7 +139,7 @@ class PatientLogsTableViewController: UIViewController{
                    
                    let moodEntry = moodEntries[indexPath.row]
                    moodEntryViewController.mood = moodEntry.mood
-                   moodEntryViewController.date = moodEntry.date
+                   moodEntryViewController.date = Date()
                    moodEntryViewController.isEditingEntry = true
             
                 case "show tremor entry details":
@@ -100,7 +157,7 @@ class PatientLogsTableViewController: UIViewController{
                 
                 let tremorEntry = tremorEntries[indexPath.row]
                 tremorEntryViewController.tremor = tremorEntry.tremor
-                tremorEntryViewController.date = tremorEntry.date
+                tremorEntryViewController.date = Date()
                 tremorEntryViewController.isEditingEntry = true
               
                default: break
@@ -112,6 +169,39 @@ class PatientLogsTableViewController: UIViewController{
     
     @IBOutlet weak var TremorTableView: UITableView!
     
+    func getMoodValue(mood: String) -> MoodEntry.Mood
+    {
+           switch mood {
+               case "happy":
+               return MoodEntry.Mood.happy
+               case "good":
+                return MoodEntry.Mood.good
+               case "bad":
+                return MoodEntry.Mood.bad
+               case "none":
+                return MoodEntry.Mood.none
+            
+               default:
+                return MoodEntry.Mood.none
+            }
+    }
+    
+    func getTremorValue(tremor: String) -> TremorEntry.Tremor
+       {
+              switch tremor {
+                  case "dysk":
+                    return TremorEntry.Tremor.dysk
+                  case "off":
+                    return TremorEntry.Tremor.off
+                  case "on":
+                    return TremorEntry.Tremor.on
+                  case "none":
+                    return TremorEntry.Tremor.none
+               
+                  default:
+                    return TremorEntry.Tremor.none
+               }
+       }
     
     @IBAction func unwindToHome(_ segue: UIStoryboardSegue) {
         guard let identifier = segue.identifier else {
@@ -139,12 +229,12 @@ class PatientLogsTableViewController: UIViewController{
                     return
                 }
 
-                updateMoodEntry(mood: newMood, date: newDate, at: moodSelectedIndexPath.row)
-                updateTremorEntry(tremor: newTremor, date: newDate, at: tremorSelectedIndexPath.row)
+//                updateMoodEntry(mood: newMood, date: newDate, at: moodSelectedIndexPath.row)
+//                updateTremorEntry(tremor: newTremor, date: newDate, at: tremorSelectedIndexPath.row)
 
             } else {
-                createMoodEntry(mood: newMood, date: newDate)
-                createTremorEntry(tremor: newTremor, date: newDate)
+//                createMoodEntry(mood: newMood, date: newDate)
+//                createTremorEntry(tremor: newTremor, date: newDate)
             }
     
         case "unwind from cancel":
@@ -154,51 +244,25 @@ class PatientLogsTableViewController: UIViewController{
             break
         }
     }
-    
-    
-   override func viewDidLoad() {
-        super.viewDidLoad()
-
-    
-    //initial value of mood
-    //let happyEntry = MoodEntry(mood: .happy, date: Date())
-    //moodEntries = [happyEntry]
-        MoodTableView.reloadData()
-    
-    //initial value of mood
-   //     let onEntry = TremorEntry(tremor: .on, date: Date())
-   //        tremorEntries = [onEntry]
-           TremorTableView.reloadData()
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        if  let selectedIndexPath = MoodTableView.indexPathForSelectedRow {
-            MoodTableView.deselectRow(at: selectedIndexPath, animated: true)
-        }
-        else if let selectedIndexPath = TremorTableView.indexPathForSelectedRow {
-            TremorTableView.deselectRow(at: selectedIndexPath, animated: true)
-      }
-    }
 }
 
-extension PatientLogsTableViewController: UITableViewDataSource, UITableViewDelegate {
+extension PatientLogsTableViewController: UITabBarDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var numberOfRow = 1
-
-        switch tableView {
-       
-        case  MoodTableView:
-              numberOfRow = moodEntries.count
-            
-        case TremorTableView:
-             numberOfRow = tremorEntries.count
-        
-        default:
-            print("Something's Wrong!!")
-        }
-        return numberOfRow
+//        var numberOfRow = 1
+//
+//        switch tableView {
+//
+//        case  MoodTableView:
+//              numberOfRow = moodEntries.count
+//
+//        case TremorTableView:
+//             numberOfRow = tremorEntries.count
+//
+//        default:
+//            print("Something's Wrong!!")
+//        }
+        return statusList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -242,22 +306,23 @@ extension PatientLogsTableViewController: UITableViewDataSource, UITableViewDele
         }
   }
     // to delete from two tables and from fire base also
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        switch editingStyle {
-        case .delete:
-            if(indexPath.row > tempIndex ){
-                tempIndex += 1
-            }
-            //delete from first table
-            deleteMoodEntry(at: indexPath.row)
-            //delete from second table
-            deleteTremorEntry(at: indexPath.row)
-            //remove from fire base
-            let ref = Database.database().reference().child("Status")
-            ref.child("\(indexPath.row + tempIndex)").removeValue()
-        default:
-            break
-            }
-        }
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//
+//        switch editingStyle {
+//        case .delete:
+//            if(indexPath.row > tempIndex ){
+//                tempIndex += 1
+//            }
+//            //delete from first table
+//            deleteMoodEntry(at: indexPath.row)
+//            //delete from second table
+//            deleteTremorEntry(at: indexPath.row)
+//            //remove from fire base
+////            let ref = Database.database().reference().child("Status")
+////            ref.child("\(indexPath.row)").removeValue()
+//            self.statusList.remove(at: indexPath.row)
+//        default:
+//            break
+//            }
+//        }
 }

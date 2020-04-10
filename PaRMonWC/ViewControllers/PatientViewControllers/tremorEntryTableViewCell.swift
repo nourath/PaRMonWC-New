@@ -17,6 +17,6 @@ class tremorEntryTableViewCell: UITableViewCell {
     func configure(_ entry: TremorEntry) {
     ImageViewTremorColor.backgroundColor = entry.tremor.colorValue
     LabelTremorTitle.text = entry.tremor.stringValue
-    LabelTremorDate.text = entry.date.stringValue
+    LabelTremorDate.text = entry.date
 }
 }
