@@ -9,7 +9,7 @@
 
 import UIKit
 import Firebase
-class PatientDosesTableViewController: UITableViewController {
+class PatientMedicationTableTableViewController: UITableViewController {
    // MARK: Properties
 
       
@@ -28,7 +28,7 @@ class PatientDosesTableViewController: UITableViewController {
         
  
         
-      let userId = Auth.auth().currentUser?.uid
+        let userId = Auth.auth().currentUser?.uid
    
 
         user = User(uid: "HDG12MLOQsY6AU6B3lhyogvZYAX2", email: "shoaa22n@gmail.com")
@@ -54,8 +54,15 @@ class PatientDosesTableViewController: UITableViewController {
         tableView.setEditing(tableView.isEditing, animated: true)
       }
       
-      override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+      override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+      {
+        if items.count == 0
+           {
+               self.title = "You have no medications yet"
+           }else{
+               self.title = "Medications"
+           }
+           return items.count
       }
       
       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D03D1C624424D8F00499871 /* PatientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03D1C524424D8F00499871 /* PatientSettingsViewController.swift */; };
+		3D03D1CE2442588900499871 /* RingingAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03D1CD2442588900499871 /* RingingAlarmViewController.swift */; };
 		3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */; };
 		3D59CCCC2419828300426D90 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCCB2419828300426D90 /* Utilities.swift */; };
 		3D59CCCE241982B100426D90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCCD241982B100426D90 /* Constants.swift */; };
@@ -20,7 +22,6 @@
 		3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59CCE12419870200426D90 /* PatientHomeViewController.swift */; };
 		3D62E10F243D8E5B00729309 /* GyroLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E10E243D8E5B00729309 /* GyroLineChartViewController.swift */; };
 		3D62E111243D8E9A00729309 /* AccLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E110243D8E9A00729309 /* AccLineChartViewController.swift */; };
-		3D62E113243D960A00729309 /* PatientDosesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E112243D960A00729309 /* PatientDosesTableViewController.swift */; };
 		3D70BCCC243E8CDB000D2D71 /* DateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70BCCB243E8CDB000D2D71 /* DateString.swift */; };
 		3D70BCD0243E8D6D000D2D71 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70BCCF243E8D6D000D2D71 /* MoodEntry.swift */; };
 		3D70BCD2243E8D7A000D2D71 /* TremorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70BCD1243E8D7A000D2D71 /* TremorEntry.swift */; };
@@ -69,7 +70,6 @@
 		3DF26274243FBAA8000DEE54 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26273243FBAA8000DEE54 /* ClockViewController.swift */; };
 		3DF26276243FBAD0000DEE54 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */; };
 		3DF26278243FBAF8000DEE54 /* ModifyAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */; };
-		3DF2627A243FBB13000DEE54 /* RingingAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26279243FBB13000DEE54 /* RingingAlarmViewController.swift */; };
 		3DF2627D243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2627B243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld */; };
 		3DF26283243FC706000DEE54 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26282243FC706000DEE54 /* Settings.bundle */; };
 		3DF2628A243FC7D9000DEE54 /* alarm_fading.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26285243FC7D8000DEE54 /* alarm_fading.wav */; };
@@ -159,6 +159,8 @@
 /* Begin PBXFileReference section */
 		01F690BA80C54A4F5681DB07 /* Pods-PaRMonWC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaRMonWC.release.xcconfig"; path = "Target Support Files/Pods-PaRMonWC/Pods-PaRMonWC.release.xcconfig"; sourceTree = "<group>"; };
 		3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaRMonWC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D03D1C524424D8F00499871 /* PatientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSettingsViewController.swift; sourceTree = "<group>"; };
+		3D03D1CD2442588900499871 /* RingingAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingAlarmViewController.swift; sourceTree = "<group>"; };
 		3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTabBarController.swift; sourceTree = "<group>"; };
 		3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMedicationTableTableViewController.swift; sourceTree = "<group>"; };
 		3D59CCCB2419828300426D90 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -173,7 +175,6 @@
 		3D59CCE12419870200426D90 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
 		3D62E10E243D8E5B00729309 /* GyroLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroLineChartViewController.swift; sourceTree = "<group>"; };
 		3D62E110243D8E9A00729309 /* AccLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccLineChartViewController.swift; sourceTree = "<group>"; };
-		3D62E112243D960A00729309 /* PatientDosesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDosesTableViewController.swift; sourceTree = "<group>"; };
 		3D70BCCB243E8CDB000D2D71 /* DateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateString.swift; sourceTree = "<group>"; };
 		3D70BCCF243E8D6D000D2D71 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
 		3D70BCD1243E8D7A000D2D71 /* TremorEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorEntry.swift; sourceTree = "<group>"; };
@@ -226,7 +227,6 @@
 		3DF26273243FBAA8000DEE54 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
 		3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyAlarmViewController.swift; sourceTree = "<group>"; };
-		3DF26279243FBB13000DEE54 /* RingingAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingAlarmViewController.swift; sourceTree = "<group>"; };
 		3DF2627C243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = minapps_alarm_clock.xcdatamodel; sourceTree = "<group>"; };
 		3DF26282243FC706000DEE54 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3DF26285243FC7D8000DEE54 /* alarm_fading.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_fading.wav; sourceTree = "<group>"; };
@@ -305,23 +305,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D59CCE32419876A00426D90 /* ViewControllers */ = {
+		3D03D1C72442517100499871 /* Patient View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3DC6625F23FC1212009486E8 /* ViewController.swift */,
 				884130C3243D641100843663 /* HomeController.swift */,
-				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
-				3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */,
-				3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */,
-				3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */,
-				52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */,
-				526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */,
-				3D70BCDF243EB2F5000D2D71 /* PhysicianPatientLogsTableViewCell.swift */,
-				884130C1243D63A300843663 /* chartController.swift */,
-				884130C5243D645A00843663 /* HealthKitAssistant.swift */,
-				3D62E10E243D8E5B00729309 /* GyroLineChartViewController.swift */,
-				3D62E110243D8E9A00729309 /* AccLineChartViewController.swift */,
-				3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */,
+				3DC6625F23FC1212009486E8 /* ViewController.swift */,
 				3D52EF41243BA73200C97686 /* PatientMedicationTableTableViewController.swift */,
 				3D59CCD1241984DA00426D90 /* PatientIntroViewController.swift */,
 				3D59CCD52419860300426D90 /* PatientSignUpViewController.swift */,
@@ -329,13 +317,78 @@
 				3D3DF77C243BEC3E009B1651 /* PatientTabBarController.swift */,
 				3D59CCE12419870200426D90 /* PatientHomeViewController.swift */,
 				526D0F122436BF3C00C15B1C /* PatientProfileController.swift */,
-				3D62E112243D960A00729309 /* PatientDosesTableViewController.swift */,
 				3D757A14243BC146006947BB /* Reminder1ViewController.swift */,
 				3D757A16243BC180006947BB /* Reminder2ViewController.swift */,
 				3D70BCD7243E96D0000D2D71 /* PatientLogsViewController.swift */,
 				3D70BCD9243E9A40000D2D71 /* PatientLogsTableViewController.swift */,
+				3DF1F182244052B300F81369 /* SettingsTableVC.swift */,
+				3DF1F1842440540C00F81369 /* RecordIDVC.swift */,
+				3DF1F1862440542400F81369 /* ExportDataVC.swift */,
+				3DF1F189244054AB00F81369 /* CollectingDataVC.swift */,
 				3D70BCDB243E9D2C000D2D71 /* moodEntryTableViewCell.swift */,
 				3D70BCDD243E9D54000D2D71 /* tremorEntryTableViewCell.swift */,
+				3D03D1C524424D8F00499871 /* PatientSettingsViewController.swift */,
+			);
+			path = "Patient View Controllers";
+			sourceTree = "<group>";
+		};
+		3D03D1C8244251B800499871 /* Physician View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
+				3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */,
+				3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */,
+				3D59CCDD241986A900426D90 /* PhysicianHomeViewController.swift */,
+				52877B2D24354C5100CD2560 /* PhysicianProfileViewController.swift */,
+				526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */,
+				3D70BCDF243EB2F5000D2D71 /* PhysicianPatientLogsTableViewCell.swift */,
+			);
+			path = "Physician View Controllers";
+			sourceTree = "<group>";
+		};
+		3D03D1C92442521700499871 /* Health Report View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				884130C1243D63A300843663 /* chartController.swift */,
+				884130C5243D645A00843663 /* HealthKitAssistant.swift */,
+				3D62E10E243D8E5B00729309 /* GyroLineChartViewController.swift */,
+				3D62E110243D8E9A00729309 /* AccLineChartViewController.swift */,
+				3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */,
+			);
+			path = "Health Report View Controllers";
+			sourceTree = "<group>";
+		};
+		3D03D1CA2442524C00499871 /* Reminder Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF26284243FC7B2000DEE54 /* Sounds */,
+				3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */,
+				3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */,
+				3DF2625F243FB61B000DEE54 /* AlarmUtility.swift */,
+				3DF26261243FB641000DEE54 /* SettingService.swift */,
+				3DF26263243FB65C000DEE54 /* DeviceService.swift */,
+				3DF26265243FB915000DEE54 /* CoreDataService.swift */,
+				3DF26267243FB96B000DEE54 /* AlarmService.swift */,
+				3DF26269243FB9A6000DEE54 /* UserNotificationService.swift */,
+				3DF2626B243FB9E7000DEE54 /* ClockTimeData.swift */,
+				3DF2626D243FBA03000DEE54 /* TimeMeridiem.swift */,
+				3DF2626F243FBA4C000DEE54 /* ClockDateData.swift */,
+				3DF26271243FBA67000DEE54 /* AlarmListCell.swift */,
+				3DF26273243FBAA8000DEE54 /* ClockViewController.swift */,
+				3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */,
+				3D03D1CD2442588900499871 /* RingingAlarmViewController.swift */,
+				3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */,
+				3DF2627B243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld */,
+			);
+			path = "Reminder Files";
+			sourceTree = "<group>";
+		};
+		3D59CCE32419876A00426D90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D03D1C92442521700499871 /* Health Report View Controllers */,
+				3D03D1C8244251B800499871 /* Physician View Controllers */,
+				3D03D1C72442517100499871 /* Patient View Controllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -398,8 +451,7 @@
 				884130B8243D312400843663 /* PaRMonWC.entitlements */,
 				3DC6625B23FC1212009486E8 /* AppDelegate.swift */,
 				3DC6625D23FC1212009486E8 /* SceneDelegate.swift */,
-				3DF262B9243FF465000DEE54 /* Sensors VCs */,
-				3DF2625A243FB581000DEE54 /* New Group */,
+				3D03D1CA2442524C00499871 /* Reminder Files */,
 				3D70BCCA243E8CC6000D2D71 /* Extensions */,
 				3DFB0EC2241B126900698915 /* Models */,
 				3D59CCE524198A1A00426D90 /* Helpers */,
@@ -437,31 +489,6 @@
 				3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */,
 			);
 			path = "PaRMonWC WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		3DF2625A243FB581000DEE54 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				3DF26284243FC7B2000DEE54 /* Sounds */,
-				3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */,
-				3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */,
-				3DF2625F243FB61B000DEE54 /* AlarmUtility.swift */,
-				3DF26261243FB641000DEE54 /* SettingService.swift */,
-				3DF26263243FB65C000DEE54 /* DeviceService.swift */,
-				3DF26265243FB915000DEE54 /* CoreDataService.swift */,
-				3DF26267243FB96B000DEE54 /* AlarmService.swift */,
-				3DF26269243FB9A6000DEE54 /* UserNotificationService.swift */,
-				3DF2626B243FB9E7000DEE54 /* ClockTimeData.swift */,
-				3DF2626D243FBA03000DEE54 /* TimeMeridiem.swift */,
-				3DF2626F243FBA4C000DEE54 /* ClockDateData.swift */,
-				3DF26271243FBA67000DEE54 /* AlarmListCell.swift */,
-				3DF26273243FBAA8000DEE54 /* ClockViewController.swift */,
-				3DF26275243FBAD0000DEE54 /* AlarmListViewController.swift */,
-				3DF26277243FBAF8000DEE54 /* ModifyAlarmViewController.swift */,
-				3DF26279243FBB13000DEE54 /* RingingAlarmViewController.swift */,
-				3DF2627B243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		3DF26284243FC7B2000DEE54 /* Sounds */ = {
@@ -504,17 +531,6 @@
 				3DF262B7243FF3FE000DEE54 /* CharacteristicName+CoreDataProperties.swift */,
 			);
 			path = Generated;
-			sourceTree = "<group>";
-		};
-		3DF262B9243FF465000DEE54 /* Sensors VCs */ = {
-			isa = PBXGroup;
-			children = (
-				3DF1F182244052B300F81369 /* SettingsTableVC.swift */,
-				3DF1F1842440540C00F81369 /* RecordIDVC.swift */,
-				3DF1F1862440542400F81369 /* ExportDataVC.swift */,
-				3DF1F189244054AB00F81369 /* CollectingDataVC.swift */,
-			);
-			path = "Sensors VCs";
 			sourceTree = "<group>";
 		};
 		3DFB0EC2241B126900698915 /* Models */ = {
@@ -794,12 +810,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D03D1CE2442588900499871 /* RingingAlarmViewController.swift in Sources */,
+				3D03D1C624424D8F00499871 /* PatientSettingsViewController.swift in Sources */,
 				3DF2629E243FF079000DEE54 /* SessionContainer.swift in Sources */,
 				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
 				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
 				3DC84087244099AE00CDB810 /* ItemSessionSessionCell.swift in Sources */,
 				3DF262A2243FF0BB000DEE54 /* Characteristic+CoreDataClass.swift in Sources */,
-				3DF2627A243FBB13000DEE54 /* RingingAlarmViewController.swift in Sources */,
 				3DF2626E243FBA03000DEE54 /* TimeMeridiem.swift in Sources */,
 				3D70BCD2243E8D7A000D2D71 /* TremorEntry.swift in Sources */,
 				3DF26276243FBAD0000DEE54 /* AlarmListViewController.swift in Sources */,
@@ -857,7 +874,6 @@
 				3DC6625E23FC1212009486E8 /* SceneDelegate.swift in Sources */,
 				3DF262A6243FF12D000DEE54 /* Session+CoreDataClass.swift in Sources */,
 				3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */,
-				3D62E113243D960A00729309 /* PatientDosesTableViewController.swift in Sources */,
 				3D62E111243D8E9A00729309 /* AccLineChartViewController.swift in Sources */,
 				52877B322435581F00CD2560 /* Medication.swift in Sources */,
 				884130C2243D63A300843663 /* chartController.swift in Sources */,

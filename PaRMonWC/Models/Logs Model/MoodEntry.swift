@@ -28,10 +28,10 @@ struct MoodEntry {
             case .happy:
                 return "happy"
             case .good:
-                return "Good"
+                return "good"
             case .bad:
                 return "bad"
-
+        
             }
         }
         
@@ -51,7 +51,8 @@ struct MoodEntry {
     }
     
     var mood: Mood
-    var date: Date
+    var date: String
+    
     
     func toAnyObject() -> Any {
       return [
