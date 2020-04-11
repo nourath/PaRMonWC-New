@@ -26,7 +26,7 @@ class PhysicianSignUpViewController: UIViewController {
         super.viewDidLoad()
 
        setUpElements()
-       self.dismissKeyboard()
+       self.dismissKey()
         
     }
     
@@ -129,11 +129,11 @@ class PhysicianSignUpViewController: UIViewController {
                         }
                     
                     func transitionToHome(){
-                        let physicianHomeViewController =  storyboard?.instantiateViewController(identifier:Constants.Storyboard.physicianHomeViewController) as? PhysicianHomeViewController
+                        let physicianHomeViewController =  storyboard?.instantiateViewController(identifier:Constants.Storyboard.physicianHomeViewController)
                         
                         view.window?.rootViewController = physicianHomeViewController
                         view.window?.makeKeyAndVisible()
-                        
+
                     }
 } //end of physician registeration
 

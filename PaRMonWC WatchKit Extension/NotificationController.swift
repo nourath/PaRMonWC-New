@@ -1,9 +1,9 @@
 //
 //  NotificationController.swift
-//  PaRMonWC WatchKit Extension
+//  MotionCollectorWatch Extension
 //
-//  Created by Noura Althenayan on 18/02/2020.
-//  Copyright © 2020 Noura. All rights reserved.
+//  Created by Aleksei Degtiarev on 01/04/2018.
+//  Copyright © 2018 Aleksei Degtiarev. All rights reserved.
 //
 
 import WatchKit
@@ -30,9 +30,14 @@ class NotificationController: WKUserNotificationInterfaceController {
         super.didDeactivate()
     }
 
-    override func didReceive(_ notification: UNNotification) {
+    /*
+    override func didReceive(_ notification: UNNotification, withCompletion completionHandler: @escaping (WKUserNotificationInterfaceType) -> Swift.Void) {
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
+        //
+        // After populating your dynamic notification interface call the completion block.
+        completionHandler(.custom)
     }
+    */
 }

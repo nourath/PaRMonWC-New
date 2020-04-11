@@ -13,6 +13,7 @@ class AccLineChartViewController: UIViewController {
 
     @IBOutlet var lineChartView: LineChart!
     @IBOutlet var tappedValue: UILabel!
+    @IBOutlet weak var currentTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,33 @@ class AccLineChartViewController: UIViewController {
         setupGyroLineChart()
     }
     
+    /*
+         // For motion getting
+         let motion = CMMotionManager()
+         let queue = OperationQueue()
+
+         motion.startDeviceMotionUpdates(to: queue) { (deviceMotion: CMDeviceMotion?, error: Error?) in
+             if error != nil {
+                 print("Encountered error: \(error!)")
+             }
+             
+             if deviceMotion != nil {
+
+    
+                 let currenTime = self.returnCurrentTime()
+                 
+                 let GyroX = deviceMotion!.rotationRate.x
+                 let GyroY = deviceMotion!.rotationRate.y
+                 let GyroZ = deviceMotion!.rotationRate.z
+                 
+                 let AccX = deviceMotion!.gravity.x + deviceMotion!.userAcceleration.x;
+                 let AccY = deviceMotion!.gravity.y + deviceMotion!.userAcceleration.y;
+                 let AccZ = deviceMotion!.gravity.z + deviceMotion!.userAcceleration.z;
+                 
+                  print ( "Gyro: \(currenTime) \(GyroX), \(GyroY), \(GyroZ)")
+                  print ( "Acc : \(currenTime) \(AccX), \(AccY), \(AccZ)")
+             }
+           */
     func setupGyroLineChart() {
         let WatchAccX: [Double] = [-0.0646514892578125,
         -0.0578155480325222,

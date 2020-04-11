@@ -9,11 +9,16 @@
 
 import UIKit
 import LineChart
+import Foundation
+import CoreMotion
+import HealthKit
+import WatchConnectivity
 
 class GyroLineChartViewController: UIViewController {
 
     @IBOutlet var lineChartView: LineChart!
     @IBOutlet var tappedValue: UILabel!
+    @IBOutlet weak var currentTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +26,47 @@ class GyroLineChartViewController: UIViewController {
         setupGyroLineChart()
     }
     
+    func returnCurrentTime() -> String {
+           let date = Date()
+           let calendar = Calendar.current
+           let hour = calendar.component(.hour, from: date)
+           let minutes = calendar.component(.minute, from: date)
+           let seconds = calendar.component(.second, from: date)
+           let nanoseconds = calendar.component(.nanosecond, from: date)
+           
+           let currentTime = "\(hour):\(minutes):\(seconds):\(nanoseconds)"
+           
+           return currentTime
+       }
     func setupGyroLineChart() {
-        let WatchGyroX: [Double] = [-0.000687094405293464,
+        /*
+        // For motion getting
+        let motion = CMMotionManager()
+        let queue = OperationQueue()
+
+        motion.startDeviceMotionUpdates(to: queue) { (deviceMotion: CMDeviceMotion?, error: Error?) in
+            if error != nil {
+                print("Encountered error: \(error!)")
+            }
+            
+            if deviceMotion != nil {
+
+   
+                let currenTime = self.returnCurrentTime()
+                
+                let GyroX = deviceMotion!.rotationRate.x
+                let GyroY = deviceMotion!.rotationRate.y
+                let GyroZ = deviceMotion!.rotationRate.z
+                
+                let AccX = deviceMotion!.gravity.x + deviceMotion!.userAcceleration.x;
+                let AccY = deviceMotion!.gravity.y + deviceMotion!.userAcceleration.y;
+                let AccZ = deviceMotion!.gravity.z + deviceMotion!.userAcceleration.z;
+                
+                 print ( "Gyro: \(currenTime) \(GyroX), \(GyroY), \(GyroZ)")
+                 print ( "Acc : \(currenTime) \(AccX), \(AccY), \(AccZ)")
+            }
+          */
+    let WatchGyroX: [Double] = [-0.000687094405293464,
         -0.0158639159053564,
         -0.0357417538762092,
         0.0177750028669834,
@@ -3717,6 +3761,7 @@ class GyroLineChartViewController: UIViewController {
         -0.0540283471345901,
         0.0242012105882167,
         0.00907818414270877]
+                 
 
         let xLabels: [String] = [""]
         lineChartView.delegate = self
@@ -3759,3 +3804,4 @@ extension GyroLineChartViewController: LineChartDelegate {
         
     }
 }
+

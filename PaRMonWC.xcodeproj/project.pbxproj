@@ -43,10 +43,16 @@
 		3DC6627323FC1217009486E8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6627123FC1217009486E8 /* Interface.storyboard */; };
 		3DC6627523FC1218009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6627423FC1218009486E8 /* Assets.xcassets */; };
 		3DC6627C23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DC6627B23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3DC6628123FC1218009486E8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628023FC1218009486E8 /* InterfaceController.swift */; };
 		3DC6628323FC1218009486E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */; };
 		3DC6628523FC1218009486E8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6628423FC1218009486E8 /* NotificationController.swift */; };
 		3DC6628723FC1219009486E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6628623FC1219009486E8 /* Assets.xcassets */; };
+		3DC8408524408EC900CDB810 /* MainIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8408424408EC900CDB810 /* MainIC.swift */; };
+		3DC84087244099AE00CDB810 /* ItemSessionSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC84086244099AE00CDB810 /* ItemSessionSessionCell.swift */; };
+		3DC840892440A01500CDB810 /* SessionIDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC840882440A01500CDB810 /* SessionIDCell.swift */; };
+		3DF1F183244052B300F81369 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F182244052B300F81369 /* SettingsTableVC.swift */; };
+		3DF1F1852440540C00F81369 /* RecordIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F1842440540C00F81369 /* RecordIDVC.swift */; };
+		3DF1F1872440542400F81369 /* ExportDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F1862440542400F81369 /* ExportDataVC.swift */; };
+		3DF1F18A244054AB00F81369 /* CollectingDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F189244054AB00F81369 /* CollectingDataVC.swift */; };
 		3DF26256243F8994000DEE54 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26255243F8994000DEE54 /* Status.swift */; };
 		3DF2625C243FB5D3000DEE54 /* RingingAlarmLaunchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */; };
 		3DF2625E243FB5FC000DEE54 /* ClockTimeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */; };
@@ -72,6 +78,25 @@
 		3DF2628D243FC7D9000DEE54 /* alarm_digital.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26288243FC7D9000DEE54 /* alarm_digital.wav */; };
 		3DF2628E243FC7D9000DEE54 /* alarm_simple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DF26289243FC7D9000DEE54 /* alarm_simple.wav */; };
 		3DF26290243FC7FA000DEE54 /* AlarmSounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2628F243FC7FA000DEE54 /* AlarmSounds.plist */; };
+		3DF26293243FEEFA000DEE54 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF26292243FEEFA000DEE54 /* HealthKit.framework */; };
+		3DF26297243FEF91000DEE54 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF26296243FEF91000DEE54 /* ComplicationController.swift */; };
+		3DF2629C243FF061000DEE54 /* SensorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2629B243FF061000DEE54 /* SensorOutput.swift */; };
+		3DF2629E243FF079000DEE54 /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2629D243FF079000DEE54 /* SessionContainer.swift */; };
+		3DF262A0243FF095000DEE54 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2629F243FF095000DEE54 /* SessionType.swift */; };
+		3DF262A2243FF0BB000DEE54 /* Characteristic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262A1243FF0BB000DEE54 /* Characteristic+CoreDataClass.swift */; };
+		3DF262A4243FF0DC000DEE54 /* SensorData+CoreDateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262A3243FF0DC000DEE54 /* SensorData+CoreDateClass.swift */; };
+		3DF262A6243FF12D000DEE54 /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262A5243FF12D000DEE54 /* Session+CoreDataClass.swift */; };
+		3DF262A8243FF149000DEE54 /* Sensor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262A7243FF149000DEE54 /* Sensor+CoreDataClass.swift */; };
+		3DF262AA243FF172000DEE54 /* CharacteristicName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262A9243FF172000DEE54 /* CharacteristicName+CoreDataClass.swift */; };
+		3DF262AD243FF1A2000DEE54 /* DataCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262AB243FF1A2000DEE54 /* DataCollector.xcdatamodeld */; };
+		3DF262B0243FF3A3000DEE54 /* Characteristic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262AF243FF3A3000DEE54 /* Characteristic+CoreDataProperties.swift */; };
+		3DF262B2243FF3BC000DEE54 /* SensorData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262B1243FF3BC000DEE54 /* SensorData+CoreDataProperties.swift */; };
+		3DF262B4243FF3CE000DEE54 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262B3243FF3CE000DEE54 /* Session+CoreDataProperties.swift */; };
+		3DF262B6243FF3DF000DEE54 /* Sensor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262B5243FF3DF000DEE54 /* Sensor+CoreDataProperties.swift */; };
+		3DF262B8243FF3FE000DEE54 /* CharacteristicName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262B7243FF3FE000DEE54 /* CharacteristicName+CoreDataProperties.swift */; };
+		3DF262C1243FF5AA000DEE54 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF262C0243FF5AA000DEE54 /* RoundButton.swift */; };
+		3DF262C62440024E000DEE54 /* SensorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2629B243FF061000DEE54 /* SensorOutput.swift */; };
+		3DF262C724400268000DEE54 /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2629D243FF079000DEE54 /* SessionContainer.swift */; };
 		3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */; };
 		3DFB0EB2241B0B2D00698915 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB0EB0241B0B2D00698915 /* User.swift */; };
 		526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */; };
@@ -173,12 +198,18 @@
 		3DC6627423FC1218009486E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC6627623FC1218009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC6627B23FC1218009486E8 /* PaRMonWC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PaRMonWC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DC6628023FC1218009486E8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		3DC6628423FC1218009486E8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3DC6628623FC1219009486E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC6628823FC1219009486E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3DC8408424408EC900CDB810 /* MainIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIC.swift; sourceTree = "<group>"; };
+		3DC84086244099AE00CDB810 /* ItemSessionSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSessionSessionCell.swift; sourceTree = "<group>"; };
+		3DC840882440A01500CDB810 /* SessionIDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionIDCell.swift; sourceTree = "<group>"; };
+		3DF1F182244052B300F81369 /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
+		3DF1F1842440540C00F81369 /* RecordIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordIDVC.swift; sourceTree = "<group>"; };
+		3DF1F1862440542400F81369 /* ExportDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDataVC.swift; sourceTree = "<group>"; };
+		3DF1F189244054AB00F81369 /* CollectingDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectingDataVC.swift; sourceTree = "<group>"; };
 		3DF26255243F8994000DEE54 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		3DF2625B243FB5D3000DEE54 /* RingingAlarmLaunchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingAlarmLaunchable.swift; sourceTree = "<group>"; };
 		3DF2625D243FB5FC000DEE54 /* ClockTimeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTimeUtility.swift; sourceTree = "<group>"; };
@@ -204,6 +235,24 @@
 		3DF26288243FC7D9000DEE54 /* alarm_digital.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_digital.wav; sourceTree = "<group>"; };
 		3DF26289243FC7D9000DEE54 /* alarm_simple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_simple.wav; sourceTree = "<group>"; };
 		3DF2628F243FC7FA000DEE54 /* AlarmSounds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AlarmSounds.plist; sourceTree = "<group>"; };
+		3DF26291243FEEFA000DEE54 /* PaRMonWC WatchKit ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PaRMonWC WatchKit ExtensionRelease.entitlements"; sourceTree = "<group>"; };
+		3DF26292243FEEFA000DEE54 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		3DF26296243FEF91000DEE54 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3DF2629B243FF061000DEE54 /* SensorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorOutput.swift; sourceTree = "<group>"; };
+		3DF2629D243FF079000DEE54 /* SessionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContainer.swift; sourceTree = "<group>"; };
+		3DF2629F243FF095000DEE54 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		3DF262A1243FF0BB000DEE54 /* Characteristic+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Characteristic+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DF262A3243FF0DC000DEE54 /* SensorData+CoreDateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDateClass.swift"; sourceTree = "<group>"; };
+		3DF262A5243FF12D000DEE54 /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DF262A7243FF149000DEE54 /* Sensor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DF262A9243FF172000DEE54 /* CharacteristicName+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacteristicName+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DF262AC243FF1A2000DEE54 /* DataCollector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataCollector.xcdatamodel; sourceTree = "<group>"; };
+		3DF262AF243FF3A3000DEE54 /* Characteristic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Characteristic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DF262B1243FF3BC000DEE54 /* SensorData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DF262B3243FF3CE000DEE54 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DF262B5243FF3DF000DEE54 /* Sensor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DF262B7243FF3FE000DEE54 /* CharacteristicName+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacteristicName+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DF262C0243FF5AA000DEE54 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3DFB0E96241B0B0700698915 /* MedicationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationTableViewController.swift; sourceTree = "<group>"; };
 		3DFB0EB0241B0B2D00698915 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		526D0F102436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianPatientsTabBarContoller.swift; sourceTree = "<group>"; };
@@ -249,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBA08D8678734276384C5BEB /* Pods_PaRMonWC_WatchKit_Extension.framework in Frameworks */,
+				3DF26293243FEEFA000DEE54 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +308,8 @@
 		3D59CCE32419876A00426D90 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				884130C3243D641100843663 /* HomeController.swift */,
 				3DC6625F23FC1212009486E8 /* ViewController.swift */,
+				884130C3243D641100843663 /* HomeController.swift */,
 				3D59CCD3241985DE00426D90 /* PhysicianIntroViewController.swift */,
 				3D59CCDB2419867E00426D90 /* PhysicianSignUpViewController.swift */,
 				3D59CCDF241986E100426D90 /* PhysicianLoginViewController.swift */,
@@ -295,6 +345,9 @@
 			children = (
 				3D59CCCB2419828300426D90 /* Utilities.swift */,
 				3D59CCCD241982B100426D90 /* Constants.swift */,
+				3DF262C0243FF5AA000DEE54 /* RoundButton.swift */,
+				3DC84086244099AE00CDB810 /* ItemSessionSessionCell.swift */,
+				3DC840882440A01500CDB810 /* SessionIDCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -345,6 +398,7 @@
 				884130B8243D312400843663 /* PaRMonWC.entitlements */,
 				3DC6625B23FC1212009486E8 /* AppDelegate.swift */,
 				3DC6625D23FC1212009486E8 /* SceneDelegate.swift */,
+				3DF262B9243FF465000DEE54 /* Sensors VCs */,
 				3DF2625A243FB581000DEE54 /* New Group */,
 				3D70BCCA243E8CC6000D2D71 /* Extensions */,
 				3DFB0EC2241B126900698915 /* Models */,
@@ -373,9 +427,11 @@
 		3DC6627F23FC1218009486E8 /* PaRMonWC WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3DC6628023FC1218009486E8 /* InterfaceController.swift */,
+				3DF26291243FEEFA000DEE54 /* PaRMonWC WatchKit ExtensionRelease.entitlements */,
 				3DC6628223FC1218009486E8 /* ExtensionDelegate.swift */,
 				3DC6628423FC1218009486E8 /* NotificationController.swift */,
+				3DF26296243FEF91000DEE54 /* ComplicationController.swift */,
+				3DC8408424408EC900CDB810 /* MainIC.swift */,
 				3DC6628623FC1219009486E8 /* Assets.xcassets */,
 				3DC6628823FC1219009486E8 /* Info.plist */,
 				3DC6628923FC1219009486E8 /* PushNotificationPayload.apns */,
@@ -421,9 +477,50 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		3DF2629A243FF049000DEE54 /* Sensors Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2629B243FF061000DEE54 /* SensorOutput.swift */,
+				3DF2629D243FF079000DEE54 /* SessionContainer.swift */,
+				3DF2629F243FF095000DEE54 /* SessionType.swift */,
+				3DF262A1243FF0BB000DEE54 /* Characteristic+CoreDataClass.swift */,
+				3DF262A3243FF0DC000DEE54 /* SensorData+CoreDateClass.swift */,
+				3DF262A5243FF12D000DEE54 /* Session+CoreDataClass.swift */,
+				3DF262A7243FF149000DEE54 /* Sensor+CoreDataClass.swift */,
+				3DF262A9243FF172000DEE54 /* CharacteristicName+CoreDataClass.swift */,
+				3DF262AB243FF1A2000DEE54 /* DataCollector.xcdatamodeld */,
+				3DF262AE243FF377000DEE54 /* Generated */,
+			);
+			path = "Sensors Model";
+			sourceTree = "<group>";
+		};
+		3DF262AE243FF377000DEE54 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				3DF262AF243FF3A3000DEE54 /* Characteristic+CoreDataProperties.swift */,
+				3DF262B1243FF3BC000DEE54 /* SensorData+CoreDataProperties.swift */,
+				3DF262B3243FF3CE000DEE54 /* Session+CoreDataProperties.swift */,
+				3DF262B5243FF3DF000DEE54 /* Sensor+CoreDataProperties.swift */,
+				3DF262B7243FF3FE000DEE54 /* CharacteristicName+CoreDataProperties.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		3DF262B9243FF465000DEE54 /* Sensors VCs */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1F182244052B300F81369 /* SettingsTableVC.swift */,
+				3DF1F1842440540C00F81369 /* RecordIDVC.swift */,
+				3DF1F1862440542400F81369 /* ExportDataVC.swift */,
+				3DF1F189244054AB00F81369 /* CollectingDataVC.swift */,
+			);
+			path = "Sensors VCs";
+			sourceTree = "<group>";
+		};
 		3DFB0EC2241B126900698915 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3DF2629A243FF049000DEE54 /* Sensors Model */,
 				3D70BCCE243E8D50000D2D71 /* Logs Model */,
 				3DFB0EE2241B12F400698915 /* Medication Model */,
 				3D757A12243BC0E4006947BB /* ReminderManager.swift */,
@@ -457,6 +554,7 @@
 		E30B1CD78BC810914F79D7F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DF26292243FEEFA000DEE54 /* HealthKit.framework */,
 				884130B9243D312400843663 /* HealthKit.framework */,
 				3787B36EC57D318122311B38 /* Pods_PaRMonWC.framework */,
 				52DE41CCECB2CACB5AA35A06 /* Pods_PaRMonWC_WatchKit_App.framework */,
@@ -696,8 +794,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF2629E243FF079000DEE54 /* SessionContainer.swift in Sources */,
 				3D59CCDE241986A900426D90 /* PhysicianHomeViewController.swift in Sources */,
 				526D0F112436B5BA00C15B1C /* PhysicianPatientsTabBarContoller.swift in Sources */,
+				3DC84087244099AE00CDB810 /* ItemSessionSessionCell.swift in Sources */,
+				3DF262A2243FF0BB000DEE54 /* Characteristic+CoreDataClass.swift in Sources */,
 				3DF2627A243FBB13000DEE54 /* RingingAlarmViewController.swift in Sources */,
 				3DF2626E243FBA03000DEE54 /* TimeMeridiem.swift in Sources */,
 				3D70BCD2243E8D7A000D2D71 /* TremorEntry.swift in Sources */,
@@ -705,31 +806,47 @@
 				3DF2625C243FB5D3000DEE54 /* RingingAlarmLaunchable.swift in Sources */,
 				3D62E10F243D8E5B00729309 /* GyroLineChartViewController.swift in Sources */,
 				3D70BCDC243E9D2C000D2D71 /* moodEntryTableViewCell.swift in Sources */,
+				3DF262A0243FF095000DEE54 /* SessionType.swift in Sources */,
 				3D59CCE0241986E100426D90 /* PhysicianLoginViewController.swift in Sources */,
 				3D59CCCE241982B100426D90 /* Constants.swift in Sources */,
 				3DF26278243FBAF8000DEE54 /* ModifyAlarmViewController.swift in Sources */,
 				3D3DF77D243BEC3E009B1651 /* PatientTabBarController.swift in Sources */,
 				3D70BCCC243E8CDB000D2D71 /* DateString.swift in Sources */,
+				3DF262A4243FF0DC000DEE54 /* SensorData+CoreDateClass.swift in Sources */,
+				3DF2629C243FF061000DEE54 /* SensorOutput.swift in Sources */,
+				3DF262AA243FF172000DEE54 /* CharacteristicName+CoreDataClass.swift in Sources */,
+				3DF262A8243FF149000DEE54 /* Sensor+CoreDataClass.swift in Sources */,
 				3DC6626023FC1212009486E8 /* ViewController.swift in Sources */,
 				3DF26270243FBA4C000DEE54 /* ClockDateData.swift in Sources */,
 				3DF26274243FBAA8000DEE54 /* ClockViewController.swift in Sources */,
 				3DF2627D243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodeld in Sources */,
 				3DFB0EB2241B0B2D00698915 /* User.swift in Sources */,
 				3DF26256243F8994000DEE54 /* Status.swift in Sources */,
+				3DF1F1852440540C00F81369 /* RecordIDVC.swift in Sources */,
+				3DF262B4243FF3CE000DEE54 /* Session+CoreDataProperties.swift in Sources */,
 				3DF26268243FB96B000DEE54 /* AlarmService.swift in Sources */,
 				3D70BCD8243E96D0000D2D71 /* PatientLogsViewController.swift in Sources */,
 				3D59CCD82419862100426D90 /* PatientLoginViewController.swift in Sources */,
+				3DF262B0243FF3A3000DEE54 /* Characteristic+CoreDataProperties.swift in Sources */,
 				3D70BCDA243E9A40000D2D71 /* PatientLogsTableViewController.swift in Sources */,
+				3DC840892440A01500CDB810 /* SessionIDCell.swift in Sources */,
 				3D59CCD62419860300426D90 /* PatientSignUpViewController.swift in Sources */,
+				3DF262C1243FF5AA000DEE54 /* RoundButton.swift in Sources */,
 				3D59CCDC2419867F00426D90 /* PhysicianSignUpViewController.swift in Sources */,
+				3DF262AD243FF1A2000DEE54 /* DataCollector.xcdatamodeld in Sources */,
 				3D757A13243BC0E4006947BB /* ReminderManager.swift in Sources */,
 				3D70BCE0243EB2F5000D2D71 /* PhysicianPatientLogsTableViewCell.swift in Sources */,
 				3DF2626C243FB9E7000DEE54 /* ClockTimeData.swift in Sources */,
+				3DF262B8243FF3FE000DEE54 /* CharacteristicName+CoreDataProperties.swift in Sources */,
+				3DF262B6243FF3DF000DEE54 /* Sensor+CoreDataProperties.swift in Sources */,
 				3D59CCD4241985DE00426D90 /* PhysicianIntroViewController.swift in Sources */,
 				3DC6625C23FC1212009486E8 /* AppDelegate.swift in Sources */,
+				3DF1F183244052B300F81369 /* SettingsTableVC.swift in Sources */,
+				3DF1F1872440542400F81369 /* ExportDataVC.swift in Sources */,
 				3DF2625E243FB5FC000DEE54 /* ClockTimeUtility.swift in Sources */,
 				3D70BCDE243E9D54000D2D71 /* tremorEntryTableViewCell.swift in Sources */,
 				3D59CCCC2419828300426D90 /* Utilities.swift in Sources */,
+				3DF1F18A244054AB00F81369 /* CollectingDataVC.swift in Sources */,
 				52877B30243557AC00CD2560 /* Patient.swift in Sources */,
 				884130C4243D641100843663 /* HomeController.swift in Sources */,
 				52877B2E24354C5100CD2560 /* PhysicianProfileViewController.swift in Sources */,
@@ -738,6 +855,7 @@
 				3DF2626A243FB9A6000DEE54 /* UserNotificationService.swift in Sources */,
 				3DF26272243FBA67000DEE54 /* AlarmListCell.swift in Sources */,
 				3DC6625E23FC1212009486E8 /* SceneDelegate.swift in Sources */,
+				3DF262A6243FF12D000DEE54 /* Session+CoreDataClass.swift in Sources */,
 				3DFB0E97241B0B0700698915 /* MedicationTableViewController.swift in Sources */,
 				3D62E113243D960A00729309 /* PatientDosesTableViewController.swift in Sources */,
 				3D62E111243D8E9A00729309 /* AccLineChartViewController.swift in Sources */,
@@ -747,6 +865,7 @@
 				3D59CCE22419870200426D90 /* PatientHomeViewController.swift in Sources */,
 				3DF26262243FB641000DEE54 /* SettingService.swift in Sources */,
 				3D757A11243BB77B006947BB /* PatientMedicationTableTableViewController.swift in Sources */,
+				3DF262B2243FF3BC000DEE54 /* SensorData+CoreDataProperties.swift in Sources */,
 				526D0F132436BF3C00C15B1C /* PatientProfileController.swift in Sources */,
 				3D757A15243BC146006947BB /* Reminder1ViewController.swift in Sources */,
 				3D70BCD0243E8D6D000D2D71 /* MoodEntry.swift in Sources */,
@@ -760,9 +879,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF262C724400268000DEE54 /* SessionContainer.swift in Sources */,
+				3DF262C62440024E000DEE54 /* SensorOutput.swift in Sources */,
 				3DC6628523FC1218009486E8 /* NotificationController.swift in Sources */,
+				3DF26297243FEF91000DEE54 /* ComplicationController.swift in Sources */,
+				3DC8408524408EC900CDB810 /* MainIC.swift in Sources */,
 				3DC6628323FC1218009486E8 /* ExtensionDelegate.swift in Sources */,
-				3DC6628123FC1218009486E8 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -951,6 +1073,8 @@
 			baseConfigurationReference = 85D1C5C2AB875A703B19EA36 /* Pods-PaRMonWC WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "PaRMonWC WatchKit Extension/PaRMonWC WatchKit ExtensionRelease.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87823T5P42;
 				INFOPLIST_FILE = "PaRMonWC WatchKit Extension/Info.plist";
@@ -961,6 +1085,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noura.PaRMonWC.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -983,7 +1108,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -1005,7 +1130,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -1102,6 +1227,16 @@
 			);
 			currentVersion = 3DF2627C243FBF22000DEE54 /* minapps_alarm_clock.xcdatamodel */;
 			path = minapps_alarm_clock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		3DF262AB243FF1A2000DEE54 /* DataCollector.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DF262AC243FF1A2000DEE54 /* DataCollector.xcdatamodel */,
+			);
+			currentVersion = 3DF262AC243FF1A2000DEE54 /* DataCollector.xcdatamodel */;
+			path = DataCollector.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

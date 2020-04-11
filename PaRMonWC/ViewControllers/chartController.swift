@@ -151,7 +151,7 @@ class HeartViewController: UIViewController {
   
    var datas: timeBmp = {
         var datas: timeBmp = [:]
-    for  day in 0 ... 7 {
+    for  day in 0 ... 31 {
             datas[day] = [] }
         
        return datas

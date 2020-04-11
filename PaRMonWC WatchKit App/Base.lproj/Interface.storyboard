@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="33k-Jn-cTU">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -23,7 +18,6 @@
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
                     </connections>
                 </notificationController>
             </objects>
@@ -32,16 +26,68 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PaRMonWC_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="522" y="643"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
+        <!--DataCollector-->
+        <scene sceneID="jqw-e2-hjP">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller identifier="Main" title="DataCollector" id="33k-Jn-cTU" customClass="MainIC" customModule="PaRMonWC_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <timer width="1" height="0.29999999999999999" alignment="center" textAlignment="center" id="YOC-kw-xMR">
+                            <fontDescription key="font" type="system" pointSize="35"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <group width="1" height="0.14999999999999999" alignment="left" id="X1Q-Lm-DKm">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="Rec ID" textAlignment="left" id="saQ-6E-vFN"/>
+                                <label width="0.5" height="1" alignment="left" text="30" textAlignment="center" id="ry0-10-gae"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.25" alignment="left" id="Yx9-s5-pDh">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="Rec num" textAlignment="left" id="5m6-aI-4dS"/>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="MeN-D4-Me7">
+                                    <connections>
+                                        <action selector="recNumberPickerChanged:" destination="33k-Jn-cTU" id="QrM-lk-woQ"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="7Su-4K-n2X">
+                            <items>
+                                <switch width="1" alignment="left" value="YES" title="Record data from phone" id="7YE-mp-Csd">
+                                    <connections>
+                                        <action selector="recordDataFromPhoneSwitchChanged:" destination="33k-Jn-cTU" id="2vi-zm-00c"/>
+                                    </connections>
+                                </switch>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="qPa-Xa-P4Z">
+                        <items>
+                            <menuItem title="Start" icon="accept" id="jby-AB-D7f">
+                                <connections>
+                                    <action selector="startButtonPressed" destination="33k-Jn-cTU" id="CKF-VB-JXI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Stop" icon="decline" id="del-pb-Cvb">
+                                <connections>
+                                    <action selector="stopButtonPressed" destination="33k-Jn-cTU" id="Knm-tH-vGa"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="recIDLabel" destination="ry0-10-gae" id="hGR-64-AUE"/>
+                        <outlet property="recNumberPicker" destination="MeN-D4-Me7" id="HuL-AK-FdW"/>
+                        <outlet property="recordDataFromPhoneSwitch" destination="7YE-mp-Csd" id="0x9-8u-tMk"/>
+                        <outlet property="timer" destination="YOC-kw-xMR" id="Fgp-Gk-Qjk"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="220" y="335"/>
         </scene>
     </scenes>
 </document>
